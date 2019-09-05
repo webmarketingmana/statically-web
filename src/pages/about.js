@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 
 import Layout from "../components/layout";
@@ -150,12 +151,12 @@ function AboutPage() {
             </div>
 
             <div className="sm:w-1/2 md:w-1/2lg:w-1/2 mb-4 mx-auto p-4 text-center">
-              <a
-                  href="/donate"
-                  className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-                >
-                  Become A Backer
-              </a>
+              <Link
+                to="/support-statically"
+                className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+              >
+                Become A Backer
+              </Link>
             </div>
           </div>
         </section>

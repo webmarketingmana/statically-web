@@ -508,21 +508,21 @@ function FeaturesPage() {
       </section>
 
       <section className="mt-20 mb-24 max-w-4xl mx-auto p-0 md:px-8">
-          <div className="flex content-center items-center flex-wrap">
-            <div className="sm:w-1/2 md:w-1/2 lg:w-1/2 mb-4 mx-auto p-4 text-center sm:text-left">
-              <h2 className="text-4xl max-w-xl font-bold">Want to contribute for this project?</h2>
-            </div>
-
-            <div className="sm:w-1/2 md:w-1/2lg:w-1/2 mb-4 mx-auto p-4 text-center">
-              <a
-                  href="/donate"
-                  className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-                >
-                  Become A Backer
-              </a>
-            </div>
+        <div className="flex content-center items-center flex-wrap">
+          <div className="sm:w-1/2 md:w-1/2 lg:w-1/2 mb-4 mx-auto p-4 text-center sm:text-left">
+            <h2 className="text-4xl max-w-xl font-bold">Want to contribute for this project?</h2>
           </div>
-        </section>
+
+          <div className="sm:w-1/2 md:w-1/2lg:w-1/2 mb-4 mx-auto p-4 text-center">
+            <Link
+              to="/support-statically"
+              className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+            >
+              Become A Backer
+            </Link>
+          </div>
+        </div>
+      </section>
 
     </Layout>
   );
