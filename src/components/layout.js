@@ -2,6 +2,9 @@ import { Link } from "gatsby";
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as Icons from "@fortawesome/free-solid-svg-icons";
+import * as Brands from '@fortawesome/free-brands-svg-icons';
 
 import Header from "./header";
 
@@ -81,16 +84,24 @@ function Layout({ children }) {
           <p>
             <Link
               to="/shirts"
-              className="font-bold mr-2"
+              className="mr-4"
+              title="T-Shirts"
             >
-              T-Shirts
+              <FontAwesomeIcon
+                icon={Icons.faTshirt}
+                className="text-teal-400 hover:text-blue-400"
+                size="2x"
+              />
             </Link>
             <a
               href="https://github.com/marsble/statically"
-              className="font-bold"
+              title="GitHub"
               target="_blank"
             >
-              GitHub
+              <FontAwesomeIcon
+                icon={Brands.faGithub}
+                size="2x"
+              />
             </a>
           </p>
         </nav>
