@@ -34,7 +34,7 @@ function Layout({ children }) {
               &copy; 2019 {" "}
               <Link
                 to="/"
-                className="font-bold"
+                className="font-bold hover:text-teal-400"
               >
                 Statically
               </Link>
@@ -42,7 +42,7 @@ function Layout({ children }) {
             <li className="mr-2">
               <Link
                 to="/about"
-                className="font-bold"
+                className="font-bold hover:text-teal-400"
               >
                 About
               </Link>
@@ -50,7 +50,7 @@ function Layout({ children }) {
             <li className="mr-2">
               <Link
                 to="/docs"
-                className="font-bold"
+                className="font-bold hover:text-teal-400"
               >
                 Docs
               </Link>
@@ -58,23 +58,31 @@ function Layout({ children }) {
             <li className="mr-2">
               <Link
                 to="/support-statically"
-                className="font-bold"
+                className="font-bold hover:text-teal-400"
               >
                 Support us!
               </Link>
             </li>
             <li className="mr-2">
               <Link
-                to="/blog"
-                className="font-bold"
+                to="/terms"
+                className="font-bold hover:text-teal-400"
               >
-                Blog
+                Terms
               </Link>
             </li>
             <li className="mr-2">
               <Link
+                to="/privacy"
+                className="font-bold hover:text-teal-400"
+              >
+                Privacy
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/contact"
-                className="font-bold"
+                className="font-bold hover:text-teal-400"
               >
                 Help
               </Link>

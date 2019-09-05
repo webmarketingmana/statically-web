@@ -12,6 +12,7 @@ function Social() {
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4 border-r">
           <Link
             to="/support-statically"
+            className="hover:text-red-400"
           >
             <FontAwesomeIcon
               icon={Regular.faLifeRing}
@@ -24,6 +25,7 @@ function Social() {
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4">
           <a
             href="https://twitter.com/staticallyio"
+            className="hover:text-blue-400"
             target="_blank"
           >
             <FontAwesomeIcon
