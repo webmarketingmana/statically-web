@@ -8,11 +8,15 @@ function Header({ siteTitle }) {
   return (
     <nav className="border-b">
       <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-2">
-        <Link to="/" className="flex items-center no-underline">
+        <Link
+          to="/"
+          id="logo"
+          className="flex items-center no-underline"
+        >
           <span className="font-bold text-xl tracking-tight hidden">{siteTitle}</span>
           <img
             className="h-8"
-            src="https://statically.io/static/images/statically_wide.svg"
+            src={'images/statically_wide.svg'}
           />
         </Link>
 
