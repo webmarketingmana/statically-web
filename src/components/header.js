@@ -16,7 +16,7 @@ function Header({ siteTitle }) {
           <span className="font-bold text-xl tracking-tight hidden">{siteTitle}</span>
           <img
             className="h-8"
-            src={'images/statically_wide.svg'}
+            src={'/images/statically_wide.svg'}
           />
         </Link>
 
