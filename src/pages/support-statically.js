@@ -26,7 +26,7 @@ function SupportStatically() {
         <section className="mt-20 mb-24 max-w-4xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
-              T-Shirt Shop
+              Shop
             </h2>
             <p className="text-lg mx-auto">
               lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
