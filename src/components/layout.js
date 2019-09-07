@@ -1,10 +1,6 @@
-import { Link } from "gatsby";
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as Icons from "@fortawesome/free-solid-svg-icons";
-import * as Brands from '@fortawesome/free-brands-svg-icons';
 
 import Header from "./header";
 import Footer from "./footer";
