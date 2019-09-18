@@ -300,6 +300,76 @@ function FeaturesPage() {
           </Link>
         </div>
 
+        <div className="flex content-center flex-wrap">
+          <Link
+            to="/maps"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto md:-ml-5"
+          >
+            <div className="px-6 py-4">
+              <FontAwesomeIcon
+                icon={Icons.faMapMarkedAlt}
+                className="mb-2"
+                size="2x"
+              />
+              <div className="font-bold text-xl mb-2">Maps</div>
+              <p className="text-gray-700 text-base">
+                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              </p>
+            </div>
+          </Link>
+
+          <Link
+            to="/font-awesome"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto"
+          >
+            <div className="px-6 py-4">
+              <FontAwesomeIcon
+                icon={Brands.faFontAwesome}
+                className="mb-2"
+                size="2x"
+              />
+              <div className="font-bold text-xl mb-2">Font Awesome</div>
+              <p className="text-gray-700 text-base">
+                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              </p>
+            </div>
+          </Link>
+
+          <Link
+            to="/google-fonts"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto"
+          >
+            <div className="px-6 py-4">
+              <FontAwesomeIcon
+                icon={Brands.faGoogle}
+                className="mb-2"
+                size="2x"
+              />
+              <div className="font-bold text-xl mb-2">Google Fonts</div>
+              <p className="text-gray-700 text-base">
+                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              </p>
+            </div>
+          </Link>
+
+          <Link
+            to="/flags"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto md:-mr-5"
+          >
+            <div className="px-6 py-4">
+              <FontAwesomeIcon
+                icon={Regular.faFlag}
+                className="mb-2"
+                size="2x"
+              />
+              <div className="font-bold text-xl mb-2">Country Flags</div>
+              <p className="text-gray-700 text-base">
+                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              </p>
+            </div>
+          </Link>
+        </div>
+
       </section>
 
       <div className="border-b"></div>
