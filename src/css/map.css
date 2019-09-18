@@ -1,0 +1,252 @@
+@keyframes breathing {
+    0% {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        opacity: 0.05
+    }
+    35% {
+        -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 0.2;
+    }
+    70% {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: .3;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.net {
+    position: relative;
+    width: 100%;
+    margin-left: -2.5%;
+}
+.net img {
+    width: 100%;
+}
+    .net ul li {
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 7px;
+        height: 7px;
+        display: block;
+    }
+        .net ul li:after {
+            content: "";
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            background-color: #ff8f4f;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            display: block;
+        }
+        .net ul li:before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: -85%;
+            left: -85%;
+            border-radius: 100%;
+            background: #ff8f4f;
+            background: radial-gradient(circle, rgba(255,143,79,0.14889705882352944) 0%, rgba(255,143,79,1) 100%);
+            -webkit-animation: breathing 2s linear infinite;
+            animation: breathing 2s linear infinite
+        }
+        .net ul.bunnycdn li:after {
+            background-color: #ff5b15;
+        }
+        .net ul.bunnycdn li:before {
+            background: rgb(255, 91, 21);
+            background: radial-gradient(circle, rgb(255, 91, 21, 1) 0%, rgb(255, 91, 21, 1) 100%);
+        }
+        .net ul.cdn77 li:after {
+            background-color: #3051d8;
+        }
+        .net ul.cdn77 li:before {
+            background: rgb(48, 81, 216);
+            background: radial-gradient(circle, rgb(48, 81, 216) 0%, rgb(48, 81, 216) 100%);
+        }
+        .net ul.fastly li:after {
+            background-color: #ff282d;
+        }
+        .net ul.fastly li:before {
+            background: rgb(255, 40, 45);
+            background: radial-gradient(circle, rgb(255, 40, 45) 0%, rgb(255, 40, 45) 100%);
+        }
+        .net ul.statically li.af-pop:after {
+            background-color: #ff4243;
+        }
+        .net ul.statically li.af-pop:before {
+            background: rgb(255,66,67);
+            background: radial-gradient(circle, rgba(255,66,67,1) 0%, rgba(255,66,67,1) 100%);
+        }
+
+        /** BunnyCDN North America */
+        .net ul.bunnycdn li.pop-na-ASH {
+            left: 26%;
+            top: 27%;
+        }
+        .net ul.bunnycdn li.pop-na-ATL {
+            left: 23.2%;
+            top: 27.5%;
+        }
+        .net ul.bunnycdn li.pop-na-CHI {
+            left: 22.5%;
+            top: 25.5%;
+        }
+        .net ul.bunnycdn li.pop-na-DAL {
+            left: 19.7%;
+            top: 30.5%;
+        }
+        .net ul.bunnycdn li.pop-na-LAX {
+            left: 14.2%;
+            top: 29.3%;
+        }
+
+        /** CDN77 North America */
+        .net ul.cdn77 li.pop-na-ATL {
+            left: 23.5%;
+            top: 28%;
+        }
+        .net ul.cdn77 li.pop-na-CHI {
+            left: 21.7%;
+            top: 25.5%;
+        }
+        .net ul.cdn77 li.pop-na-DAL {
+            left: 20%;
+            top: 31%;
+        }
+        .net ul.cdn77 li.pop-na-LAX {
+            left: 14.3%;
+            top: 30%;
+        }
+
+        /** Cloudflare North America */
+        .net ul.cloudflare li.pop-na-ASH {
+            left: 25.5%;
+            top: 28%;
+        }
+        .net ul.cloudflare li.pop-na-ATL {
+            left: 24%;
+            top: 28.5%;
+        }
+        .net ul.cloudflare li.pop-na-BOS {
+            left: 28%;
+            top: 24%;
+        }
+        .net ul.cloudflare li.pop-na-BUF {
+            left: 25%;
+            top: 25%;
+        }
+        .net ul.cloudflare li.pop-na-YYC {
+            left: 15%;
+            top: 19%;
+        }
+        .net ul.cloudflare li.pop-na-CLT {
+            left: 24.5%;
+            top: 30%;
+        }
+        .net ul.cloudflare li.pop-na-CHI {
+            left: 22.1%;
+            top: 25.1%;
+        }
+        .net ul.cloudflare li.pop-na-CMH {
+            left: 24%;
+            top: 26.5%;
+        }
+        .net ul.cloudflare li.pop-na-DAL {
+            left: 20.4%;
+            top: 30.5%;
+        }
+        .net ul.cloudflare li.pop-na-DEN {
+            left: 17.5%;
+            top: 26.2%;
+        }
+        .net ul.cloudflare li.pop-na-DTW {
+            left: 24%;
+            top: 25%;
+        }
+        .net ul.cloudflare li.pop-na-HOU {
+            left: 20.7%;
+            top: 31.5%;
+        }
+        .net ul.cloudflare li.pop-na-IND {
+            left: 23%;
+            top: 26%;
+        }
+        .net ul.cloudflare li.pop-na-JAX {
+            left: 24.2%;
+            top: 31.5%;
+        }
+        .net ul.cloudflare li.pop-na-MCI {
+            left: 20%;
+            top: 27%;
+        }
+        .net ul.cloudflare li.pop-na-LVS {
+            left: 15%;
+            top: 28%;
+        }
+        .net ul.cloudflare li.pop-na-LAX {
+            left: 14%;
+            top: 30%;
+        }
+        .net ul.cloudflare li.pop-na-MFE {
+            left: 19.5%;
+            top: 33.1%;
+        }
+        .net ul.cloudflare li.pop-na-MEM {
+            left: 21.8%;
+            top: 29%;
+        }
+
+        /** Fastly North America */
+        .net ul.fastly li.pop-na-ASH {
+            left: 25.6%;
+            top: 26.9%;
+        }
+        .net ul.fastly li.pop-na-ATL {
+            left: 23.5%;
+            top: 29%;
+        }
+        .net ul.fastly li.pop-na-BOS {
+            left: 27.5%;
+            top: 23.5%;
+        }
+        .net ul.fastly li.pop-na-CHI {
+            left: 22%;
+            top: 26%;
+        }
+        .net ul.fastly li.pop-na-CMH {
+            left: 23.7%;
+            top: 26.3%;
+        }
+        .net ul.fastly li.pop-na-DAL {
+            left: 20%;
+            top: 30%;
+        }
+        .net ul.fastly li.pop-na-DEN {
+            left: 17%;
+            top: 26%;
+        }
+        .net ul.fastly li.pop-na-HOU {
+            left: 20.5%;
+            top: 32.2%;
+        }
+        .net ul.fastly li.pop-na-LAX {
+            left: 13.8%;
+            top: 29.4%;
+        }
