@@ -303,7 +303,7 @@ function FeaturesPage() {
         <div className="flex content-center flex-wrap">
           <Link
             to="/maps"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto md:-ml-5"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-5"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -320,7 +320,7 @@ function FeaturesPage() {
 
           <Link
             to="/font-awesome"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -337,7 +337,7 @@ function FeaturesPage() {
 
           <Link
             to="/google-fonts"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -354,7 +354,7 @@ function FeaturesPage() {
 
           <Link
             to="/flags"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto md:-mr-5"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-5"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -479,7 +479,7 @@ function FeaturesPage() {
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 m-auto">
             <img
               className="border"
-              src="https://cdn.statically.io/ss/statically.io"
+              src="https://cdn.statically.io/img/via.placeholder.com/600x450"
             />
           </div>
         </div>
