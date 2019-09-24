@@ -7,7 +7,7 @@ import * as Brands from '@fortawesome/free-brands-svg-icons';
 
 function Social() {
   return (
-    <section className="mt-20 mb-24">
+    <section className="my-20">
       <div className="flex content-center items-center max-w-xl mx-auto flex-wrap text-center text-xl">
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4 border-r">
           <Link

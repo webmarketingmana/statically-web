@@ -14,7 +14,7 @@ function AboutPage() {
 
       <div className="">
 
-        <section className="text-center mt-20 mb-24 max-w-4xl mx-auto p-0 md:px-8">
+        <section className="text-center mt-20 mb-24 max-w-4xl mx-auto px-8 md:px-0">
           <h2 className="inline-block mt-8">
             <img
               className="h-20"
@@ -23,15 +23,15 @@ function AboutPage() {
           </h2>
         </section>
 
-        <div class="border-b"></div>
+        <div className="border-b"></div>
 
-        <section className="mt-20 mb-24 max-w-4xl mx-auto p-0 md:px-8">
+        <section className="mt-20 mb-24 max-w-4xl mx-auto px-8 md:px-0">
           <div className="text-center mb-20">
             <span className="font-bold text-purple-500">OUR MISSION</span>
             <h2 className="font-bold text-5xl mx-auto mt-5 mb-5">
               Our mission is to make static files easy to manage and fast to deliver.
             </h2>
-            <p className="mx-auto">
+            <p className="mx-auto text-xl">
               We help files distribution <strong>faster, smaller, reliable, and more efficient</strong> than ever.
             </p>
           </div>
@@ -68,7 +68,7 @@ function AboutPage() {
 
         <div className="border-b"></div>
 
-        <section className="mt-20 mb-24 max-w-6xl mx-auto p-0 md:px-8">
+        <section className="mt-20 mb-24 max-w-6xl mx-auto px-8 md:px-0">
           <div className="text-center mb-20">
             <h2 className="font-bold text-5xl mx-auto mt-5 mb-5">
               Our Team
