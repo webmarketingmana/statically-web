@@ -78,10 +78,10 @@ function FeaturesPage() {
         <div className="flex flex-wrap mb-16">
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 mb-20 sm:mb-0">
             <h2 className="font-bold text-4xl md:max-w-sm mb-5">
-              All your GitHub, GitLab, Bitbucket, &amp; WordPress files in a CDN
+              All your GitHub, GitLab, Bitbucket, &amp; WordPress files in a single CDN
             </h2>
             <p className="text-lg">
-              Advantage your development experience with a powerful optimized content delivery network that know your needs.
+              Advance your development experiences with a powerful optimized Content Delivery Network that know your needs.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ function FeaturesPage() {
             <Link
             to="/custom"
             >
-              <div className="max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg mx-auto text-center px-6 py-4">
+              <div className="max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg mx-auto text-center px-6 py-4 mb-2">
                 <FontAwesomeIcon
                   icon={Icons.faCubes}
                   className="integration-logo mx-auto"
@@ -103,12 +103,12 @@ function FeaturesPage() {
 
               <img
                 src="https://cdn.statically.io/img/statically.io/static/images/statically.png"
-                className="integration-logo mx-auto mb-2"
+                className="integration-logo mx-auto my-2"
               />
 
               <svg width="20" height="30" viewBox="0 0 20 30" className="fetch"><path d="M10 40 L10 -10"></path></svg>
 
-              <div className="text-center">
+              <div className="text-center mt-2">
                 <FontAwesomeIcon
                   icon={Regular.faUser}
                   className="integration-logo mx-auto mb-1"
@@ -121,7 +121,7 @@ function FeaturesPage() {
         </div>
 
         <div className="flex content-center flex-wrap">
-          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden border mx-auto md:-ml-5">
+          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-ml-5">
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Unlimited files</div>
               <p className="text-gray-700 text-base">
@@ -130,7 +130,7 @@ function FeaturesPage() {
             </div>
           </div>
 
-          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden border mx-auto">
+          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Works with any files</div>
               <p className="text-gray-700 text-base">
@@ -139,7 +139,7 @@ function FeaturesPage() {
             </div>
           </div>
 
-          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden border mx-auto md:-mr-5">
+          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-mr-5">
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Built-in optimization</div>
               <p className="text-gray-700 text-base">
@@ -157,7 +157,7 @@ function FeaturesPage() {
           <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
             Discover Our Features
           </h2>
-          <p className="text-lg max-w-xl mx-auto">
+          <p className="text-xl max-w-xl mx-auto">
             lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
           </p>
         </div>
@@ -165,7 +165,7 @@ function FeaturesPage() {
         <div className="flex content-center flex-wrap">
           <Link
             to="/github"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto md:-ml-5">
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-5">
             <div className="px-6 py-4">
               <FontAwesomeIcon
                 icon={Brands.faGithub}
@@ -181,7 +181,7 @@ function FeaturesPage() {
 
           <Link
             to="/gitlab"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto">
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto">
             <div className="px-6 py-4">
               <FontAwesomeIcon
                 icon={Brands.faGitlab}
@@ -197,7 +197,7 @@ function FeaturesPage() {
 
           <Link
             to="/bitbucket"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -214,7 +214,7 @@ function FeaturesPage() {
 
           <Link
             to="/imgpx"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto md:-mr-5"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-5"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -233,7 +233,7 @@ function FeaturesPage() {
         <div className="flex content-center flex-wrap">
           <Link
             to="/libs"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto md:-ml-5"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-5"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -250,7 +250,7 @@ function FeaturesPage() {
 
           <Link
             to="/wordpress"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -267,7 +267,7 @@ function FeaturesPage() {
 
           <Link
             to="/favicons"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -284,7 +284,7 @@ function FeaturesPage() {
 
           <Link
             to="/custom"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm rounded overflow-hidden border hover:shadow-lg mx-auto md:-mr-5"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-5"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -376,7 +376,7 @@ function FeaturesPage() {
 
       <section className="bg-gray-100 pt-20 pb-20 border-b">
         <div className="flex content-center flex-wrap max-w-5xl mx-auto">
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faBolt}
@@ -390,7 +390,7 @@ function FeaturesPage() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faCompressArrowsAlt}
@@ -404,7 +404,7 @@ function FeaturesPage() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faGlobe}
@@ -420,7 +420,7 @@ function FeaturesPage() {
           </div>
 
           <div className="flex content-center flex-wrap max-w-5xl mx-auto">
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faMapMarker}
@@ -434,7 +434,7 @@ function FeaturesPage() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faLocationArrow}
@@ -448,7 +448,7 @@ function FeaturesPage() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faCopy}
@@ -471,8 +471,8 @@ function FeaturesPage() {
             <h2 className="font-bold text-3xl md:max-w-sm mb-5">
               An open CDN for you
             </h2>
-            <p className="text-lg">
-              Advantage your development experience with a powerful optimized content delivery network that know your needs.
+            <p className="text-xl">
+              Advance your development experiences with a powerful optimized Content Delivery Network that know your needs.
             </p>
           </div>
 
@@ -488,7 +488,7 @@ function FeaturesPage() {
 
       <section className="bg-gray-800 text-gray-100 pt-20 pb-20 border-b">
         <div className="flex content-center flex-wrap max-w-5xl mx-auto">
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faUserShield}
@@ -502,7 +502,7 @@ function FeaturesPage() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faLock}
@@ -516,7 +516,7 @@ function FeaturesPage() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faBug}
@@ -532,7 +532,7 @@ function FeaturesPage() {
           </div>
 
           <div className="flex content-center flex-wrap max-w-5xl mx-auto">
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faCertificate}
@@ -546,7 +546,7 @@ function FeaturesPage() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faShieldAlt}
@@ -560,7 +560,7 @@ function FeaturesPage() {
               </div>
             </div>
 
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
               <div className="px-6 py-4">
                 <FontAwesomeIcon
                   icon={Icons.faAngleDoubleRight}
