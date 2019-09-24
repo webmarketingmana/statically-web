@@ -110,10 +110,13 @@ function NetworkPage() {
                 <li className="eu-pop pop-eu-ZRH"></li>
 
                 {/** CDN77 Asia */}
-                <li className="as-pop pop-as-BLR"></li>
+                <li className="as-pop pop-as-DEL"></li>
                 <li className="as-pop pop-as-HKG"></li>
+                <li className="as-pop pop-as-ISL"></li>
+                <li className="as-pop pop-as-JKT"></li>
                 <li className="as-pop pop-as-SEL"></li>
                 <li className="as-pop pop-as-SIN"></li>
+                <li className="as-pop pop-as-TSA"></li>
                 <li className="as-pop pop-as-TYO"></li>
 
                 {/** CDN77 Oceania */}
@@ -347,7 +350,7 @@ function NetworkPage() {
                 <li className="na-pop pop-na-HOU"></li>
                 <li className="na-pop pop-na-LAX"></li>
                 <li className="na-pop pop-na-MIA"></li>
-                <li className="na-pop pop-na-MSP"></li>
+                <li className="na-pop pop-na-MIC"></li>
                 <li className="na-pop pop-na-YMQ"></li>
                 <li className="na-pop pop-na-NYC"></li>
                 <li className="na-pop pop-na-SJC"></li>
@@ -382,7 +385,7 @@ function NetworkPage() {
                 {/** Fastly Asia */}
                 <li className="as-pop pop-as-MAA"></li>
                 <li className="as-pop pop-as-DXB"></li>
-                <li className="as-pop pop-as-HGK"></li>
+                <li className="as-pop pop-as-HKG"></li>
                 <li className="as-pop pop-as-BOM"></li>
                 <li className="as-pop pop-as-DEL"></li>
                 <li className="as-pop pop-as-OSA"></li>
@@ -397,7 +400,7 @@ function NetworkPage() {
                 <li className="oc-pop pop-oc-SYD"></li>
                 <li className="oc-pop pop-oc-WLG"></li>
 
-                {/** Fastly Coming soon */}
+                {/** Fastly coming soon */}
                 <li className="cs-pop pop-cs-DUB"></li>
                 <li className="cs-pop pop-cs-JAC"></li>
                 <li className="cs-pop pop-cs-LON"></li>
@@ -421,7 +424,7 @@ function NetworkPage() {
 
                 {/** Statically Oceania */}
 
-                {/** Statically Coming soon */}
+                {/** Statically coming soon */}
                 <li className="cs-pop pop-cs-MES"></li>
                 <li className="cs-pop pop-cs-BDO"></li>
                 <li className="cs-pop pop-cs-SUB"></li>
