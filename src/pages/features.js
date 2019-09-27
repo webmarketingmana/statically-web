@@ -16,7 +16,7 @@ function FeaturesPage() {
         keywords={[`statically`, `optimization`, `images`, `cdn`, `features`]}
       />
 
-      <section className="bg-gray-900 text-gray-100 pt-20 pb-24">
+      <section className="bg-gray-900 text-gray-100 pt-20 pb-24 px-4 md:px-0">
         <div className="text-center mb-20 max-w-4xl mx-auto">
           <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
             A suite of modern technologies for fast &amp; better static assets
@@ -74,7 +74,7 @@ function FeaturesPage() {
 
       <div className="border-b"></div>
 
-      <section className="mt-20 mb-24 max-w-4xl mx-auto">
+      <section className="mt-20 mb-24 max-w-4xl mx-auto px-8 lg:px-0">
         <div className="flex flex-wrap mb-16">
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 mb-20 sm:mb-0">
             <h2 className="font-bold text-4xl md:max-w-sm mb-5">
@@ -121,7 +121,7 @@ function FeaturesPage() {
         </div>
 
         <div className="flex content-center flex-wrap">
-          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-ml-5">
+          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-ml-6">
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Unlimited files</div>
               <p className="text-gray-700 text-base">
@@ -139,7 +139,7 @@ function FeaturesPage() {
             </div>
           </div>
 
-          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-mr-5">
+          <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-mr-6">
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Built-in optimization</div>
               <p className="text-gray-700 text-base">
@@ -152,7 +152,7 @@ function FeaturesPage() {
 
       <div className="border-b"></div>
 
-      <section className="mt-20 mb-24 max-w-5xl mx-auto">
+      <section className="mt-20 mb-24 max-w-5xl mx-auto px-8 lg:px-0">
         <div className="text-center mb-20">
           <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
             Discover Our Features
@@ -165,7 +165,7 @@ function FeaturesPage() {
         <div className="flex content-center flex-wrap">
           <Link
             to="/github"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-5">
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-6">
             <div className="px-6 py-4">
               <FontAwesomeIcon
                 icon={Brands.faGithub}
@@ -214,7 +214,7 @@ function FeaturesPage() {
 
           <Link
             to="/imgpx"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-5"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-6"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -233,7 +233,7 @@ function FeaturesPage() {
         <div className="flex content-center flex-wrap">
           <Link
             to="/libs"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-5"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-6"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -284,7 +284,7 @@ function FeaturesPage() {
 
           <Link
             to="/custom"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-5"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-6"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon

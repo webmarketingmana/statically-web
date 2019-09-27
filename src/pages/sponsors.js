@@ -11,7 +11,7 @@ function SponsorsPages() {
         keywords={[`statically`]}
       />
 
-      <div className="max-w-2xl mx-auto px-8 md:px-0">
+      <div className="max-w-2xl mx-auto px-4 md:px-0">
 
         <section className="mt-20 mb-24 max-w-4xl mx-auto">
           <div className="text-center mb-20">

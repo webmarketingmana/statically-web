@@ -14,7 +14,7 @@ function AboutPage() {
 
       <div className="">
 
-        <section className="text-center mt-20 mb-24 max-w-4xl mx-auto px-8 md:px-0">
+        <section className="text-center mt-20 mb-24 max-w-4xl mx-auto px-4 md:px-0">
           <h2 className="inline-block mt-8">
             <img
               className="h-20"
@@ -25,7 +25,7 @@ function AboutPage() {
 
         <div className="border-b"></div>
 
-        <section className="mt-20 mb-24 max-w-4xl mx-auto px-8 md:px-0">
+        <section className="mt-20 mb-24 max-w-4xl mx-auto px-4 md:px-0">
           <div className="text-center mb-20">
             <span className="font-bold text-purple-500">OUR MISSION</span>
             <h2 className="font-bold text-5xl mx-auto mt-5 mb-5">
@@ -37,38 +37,38 @@ function AboutPage() {
           </div>
 
           <div className="flex content-center flex-wrap">
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Fast</div>
-                  <p className="text-gray-700 text-base">
-                    For fast files delivery from any location.
-                  </p>
-                </div>
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2 max-w-xxs">Fast</div>
+                <p className="text-gray-700 text-base">
+                  For fast files delivery from any location.
+                </p>
               </div>
+            </div>
 
-              <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Easy</div>
-                  <p className="text-gray-700 text-base">
-                    No traffic limits or throttling. Files are served via super fast global CDNs.
-                  </p>
-                </div>
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2 max-w-xxs">Easy</div>
+                <p className="text-gray-700 text-base">
+                  No traffic limits or throttling. Files are served via super fast global CDNs.
+                </p>
               </div>
-              
-              <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm rounded overflow-hidden mx-auto">
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Secure &amp; Reliable</div>
-                  <p className="text-gray-700 text-base">
-                    Backed by the world-leading DNS, CDN, &amp; Cloud computing companies makes our infrastructure fast, reliable, and secure.
-                  </p>
-                </div>
+            </div>
+            
+            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2 max-w-xxs">Secure &amp; Reliable</div>
+                <p className="text-gray-700 text-base">
+                  Backed by the world-leading DNS, CDN, &amp; Cloud computing companies makes our infrastructure fast, reliable, and secure.
+                </p>
               </div>
+            </div>
           </div>
         </section>
 
         <div className="border-b"></div>
 
-        <section className="mt-20 mb-24 max-w-6xl mx-auto px-8 md:px-0">
+        <section className="mt-20 mb-24 max-w-6xl mx-auto px-4 md:px-0">
           <div className="text-center mb-20">
             <h2 className="font-bold text-5xl mx-auto mt-5 mb-5">
               Our Team
@@ -144,7 +144,7 @@ function AboutPage() {
 
         <div className="border-b"></div>
 
-        <section className="mt-20 mb-24 max-w-4xl mx-auto p-0 md:px-12">
+        <section className="mt-20 mb-24 max-w-4xl mx-auto px-4 md:px-0">
           <div className="flex content-center items-center flex-wrap">
             <div className="sm:w-1/2 md:w-1/2 lg:w-1/2 mb-4 mx-auto p-4 text-center sm:text-left">
               <h2 className="text-4xl max-w-xl font-bold">Want to contribute for this project?</h2>
