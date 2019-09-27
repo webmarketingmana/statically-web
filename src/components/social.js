@@ -9,7 +9,7 @@ function Social() {
   return (
     <section className="my-20">
       <div className="flex content-center items-center max-w-xl mx-auto flex-wrap text-center text-xl">
-        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4 border-r">
+        <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 p-4 md:border-r">
           <Link
             to="/support-statically"
             className="hover:text-red-400"
