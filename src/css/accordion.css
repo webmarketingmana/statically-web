@@ -1,0 +1,14 @@
+.accordion header + div {
+    height: auto;
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .5s ease-out .125s;
+}
+
+.accordion header + div.hidden {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+}
