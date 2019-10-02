@@ -2,20 +2,24 @@ import { Link } from "gatsby";
 import React from "react";
 
 class FAQs extends React.Component {
+
+  setFirstAccordionHeaderRef = header => {
+    this.firstAccordionHeader = header;
+  }
+
   handleAccordionChange = e => {
     let toggle = e.currentTarget,
         icon = toggle.querySelector('svg polyline'),
         pane = toggle.nextElementSibling,
         parent = toggle.parentNode.parentNode,
-        container = parent.parentNode,
-        parents = container.children;
+        parents = parent.parentNode.children;
     // Collapse all
-    for (let i = 0, j = parents.length; i < j; ++i) {console.log(parents[i]);
+    for (let i = 0, j = parents.length; i < j; ++i) {
         let header = parents[i].querySelector('header'),
             icon = header.querySelector('svg polyline');
         icon.setAttribute('stroke', '#606F7B');
         icon.setAttribute('points', '6 9 12 15 18 9');
-        header.nextElementSibling.classList.add('hidden');
+        header.nextElementSibling.style.height = '0px';
         header.parentNode.classList.add('border-transparent');
         header.parentNode.classList.remove('border-indigo');
     }
@@ -24,8 +28,16 @@ class FAQs extends React.Component {
     toggle.parentNode.classList.remove('border-transparent');
     icon.setAttribute('stroke', '#606F7B'); // Just in case you want to change the icon color for active panel
     icon.setAttribute('points', '18 15 12 9 6 15');
-    pane.classList.remove('hidden');
+    pane.style.height = pane.scrollHeight + 'px';
   }
+
+  componentDidMount() {
+    // Expand first pane on ready
+    this.handleAccordionChange({
+      currentTarget: this.firstAccordionHeader
+    });
+  }
+
   render() {
     return (
       <section className="mt-20 mb-32 max-w-2xl mx-auto">
@@ -35,20 +47,20 @@ class FAQs extends React.Component {
 
         <div className="accordion">
           <article className="border-t border-b">
-            <div className="border-l-2 border-indigo">
-              <header className="flex justify-between items-center py-5 px-8 cursor-pointer select-none" onClick={this.handleAccordionChange}>
+            <div className="border-l-2 bg-grey-lightest border-transparent">
+              <header className="flex justify-between items-center py-5 px-8 cursor-pointer select-none" onClick={this.handleAccordionChange} ref={this.setFirstAccordionHeaderRef}>
                 <span className="text-grey-darkest font-thin text-xl">
                   What is Statically?
                 </span>
                 <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center">
                   {/* icon by feathericons.com */}
                   <svg aria-hidden="true" fill="none" height={24} stroke="#606F7B" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} viewBox="0 0 24 24" width={24} xmlns="http://www.w3.org/2000/svg">
-                    <polyline points="18 15 12 9 6 15">
+                    <polyline points="6 9 12 15 18 9">
                     </polyline>
                   </svg>
                 </div>
               </header>
-              <div className="">
+              <div>
                 <div className="pl-8 pr-8 pb-5 text-grey-darkest">
                   <p>Accordion content.</p>
                 </div>
@@ -69,7 +81,7 @@ class FAQs extends React.Component {
                   </svg>
                 </div>
               </header>
-              <div className="hidden">
+              <div>
                 <div className="pl-8 pr-8 pb-5 text-grey-darkest">
                   <ul className="pl-4">
                     <li className="pb-2">
@@ -100,7 +112,7 @@ class FAQs extends React.Component {
                   </svg>
                 </div>
               </header>
-              <div className="hidden">
+              <div>
                 <div className="pl-8 pr-8 pb-5 text-grey-darkest">
                   <p>Accordion content.</p>
                 </div>
@@ -121,7 +133,7 @@ class FAQs extends React.Component {
                   </svg>
                 </div>
               </header>
-              <div className="hidden">
+              <div>
                 <div className="pl-8 pr-8 pb-5 text-grey-darkest">
                   <p>Yes. Statically is free for everyone to use. We make profits from <Link className="text-red-500" to="/sponsors">our sponsors</Link>, custom domain services, <Link className="text-red-500" to="/shop">t-shirts</Link>, and <Link className="text-red-500" to="/support-statically">users&rsquo; donation</Link>.</p>
                 </div>
@@ -133,6 +145,7 @@ class FAQs extends React.Component {
       </section>
     );
   }
+
 }
 
 export default FAQs;
