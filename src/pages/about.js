@@ -27,7 +27,7 @@ function AboutPage() {
 
         <section className="mt-20 mb-24 max-w-4xl mx-auto px-4 md:px-0">
           <div className="text-center mb-20">
-            <span className="font-bold text-purple-500">OUR MISSION</span>
+            <span className="font-bold text-purple-500 uppercase">Our Mission</span>
             <h2 className="font-bold text-5xl mx-auto mt-5 mb-5">
               Our mission is to make static files easy to manage and fast to deliver.
             </h2>
@@ -100,7 +100,7 @@ function AboutPage() {
             <div className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto p-6">
               <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src="https://cdn.statically.io/img/github.com/tovic.png" />
               <h2 className="text-2xl font-bold">
-                Taufik Nurohman
+                Taufik Nurrohman
                 <img
                   className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/misc/flags/id.png"
                   title="Indonesia"
