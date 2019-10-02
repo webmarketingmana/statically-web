@@ -11,9 +11,10 @@ import Social from "../components/social";
 
 const STATICALLY_PASTE_DATA = {
   // Debug
-  'https?:\\/\\/cdn\\.staticall?y\\.(?:com|io)\\/\\S+': function(to, value) {
-    let inspector = to.parentNode.nextElementSibling;
+  'https?:\\/\\/cdn\\.staticall?y\\.(?:com|io)\\/\\S+': (to, value) => {
+    let inspector = to.parentNode.parentNode.nextElementSibling;
     inspector.classList.remove('hidden');
+    to.parentNode.parentNode.classList.add('hidden');
     inspector.innerHTML = 'Debugging URL\u2026';
     value && fetch('https://apis.marsble.com/http2/v1/check?api_key=1fdba1ef633460c72972aaa993d61b&url=' + value).then(response => {
       if (!response.ok) {
@@ -32,8 +33,8 @@ const STATICALLY_PASTE_DATA = {
     return "";
   },
   'https?:\\/\\/raw\\.github(?:usercontent)?\\.com\\/([^\\/]+)\\/([^\\/]+)\\/([^\\/]+)\\/(.+)': 'https://cdn.statically.io/gh/$1/$2/$3/$4',
-  'https?:\\/\\/github\\.com\\/([^\\/]+)\\/([^\\/]+)\\/(?!releases\\/)(?:(?:blob|raw)\\/)?([^\\/]+)\\/(.+)': function(to, value, m1, m2, m3, m4) {
-    to.parentNode.classList.remove('hidden');
+  'https?:\\/\\/github\\.com\\/([^\\/]+)\\/([^\\/]+)\\/(?!releases\\/)(?:(?:blob|raw)\\/)?([^\\/]+)\\/(.+)': (to, value, m1, m2, m3, m4) => {
+    to.parentNode.parentNode.classList.remove('hidden');
     if (m3 === 'master') {
       fetch('https://api.github.com/repos/' + m1 + '/' + m2 + '/commits/' + m3)
         .then(response => response.json())
@@ -41,14 +42,16 @@ const STATICALLY_PASTE_DATA = {
         let hash = json.sha && json.sha.slice(0, 8);
         if (hash) {
           to.value = 'https://cdn.statically.io/gh/' + m1 + '/' + m2 + '/' + hash + '/' + m4;
+          to.focus();
+          to.select();
         }
       });
       return 'Fetching URL\u2026';
     }
     return 'https://cdn.statically.io/gh/' + m1 + '/' + m2 + '/' + m3 + '/' + m4;
   },
-  'https?:\\/\\/gist\\.github\\.com\\/([^\\/\\s]+)\\/([^?&#]+)': function(to, value, m1, m2) {
-    to.parentNode.classList.remove('hidden');
+  'https?:\\/\\/gist\\.github\\.com\\/([^\\/\\s]+)\\/([^?&#]+)': (to, value, m1, m2) => {
+    to.parentNode.parentNode.classList.remove('hidden');
     fetch('https://api.github.com/gists/' + m2)
       .then(response => response.json())
         .then(json => {
@@ -57,6 +60,8 @@ const STATICALLY_PASTE_DATA = {
           link = files[f[0]] && files[f[0]].raw_url;
       if (link) {
         to.value = link.replace(new RegExp('^https?:\\/\\/gist\\.githubusercontent\\.com\\/(\\S+)$'), 'https://cdn.statically.io/gist/$1');
+        to.focus();
+        to.select();
       }
     });
     return 'Fetching URL\u2026';
@@ -67,13 +72,17 @@ const STATICALLY_PASTE_DATA = {
 };
 
 class IndexPage extends React.Component {
-  handleInputChange = e => {
-    let from = e.target,
-        to = from.parentNode.nextElementSibling.children[1];
+
+  setSourceRef = source => {
+    this.source = source;
+  }
+
+  handleInputChange = () => {
+    let {from, to} = this.source;
     let value = from.value,
         tasks = STATICALLY_PASTE_DATA, i, m, r;
-    to.parentNode.classList.add('hidden');
-    to.parentNode.nextElementSibling.classList.add('hidden');
+    to.parentNode.parentNode.classList.add('hidden');
+    to.parentNode.parentNode.nextElementSibling.classList.add('hidden');
     for (i in tasks) {
       if (m = value.match(r = new RegExp('^' + i + '$'))) {
         if (typeof tasks[i] === "function") {
@@ -82,7 +91,7 @@ class IndexPage extends React.Component {
         } else {
           to.value = value.replace(r, tasks[i]);
           setTimeout(() => {
-            to.parentNode.classList.remove('hidden');
+            to.parentNode.parentNode.classList.remove('hidden');
             to.focus();
             to.select();
           }, 10);
@@ -91,9 +100,11 @@ class IndexPage extends React.Component {
       }
     }
   }
+
   handleSubmit = e => {
     e.preventDefault();
   }
+
   render() {
     return (
       <Layout>
@@ -109,14 +120,17 @@ class IndexPage extends React.Component {
               A free, fast, &amp; modern CDN for open source projects, WordPress, images, and any static assets.
             </h1>
 
-            <form className="container mx-auto mb-20 md:w-2/3" onSubmit={this.handleSubmit}>
+            <form className="container mx-auto mb-20 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
               <div>
                 <input className="bg-white focus:outline-none border border-gray-300 rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.handleInputChange} onPaste={this.handleInputChange} placeholder="Paste a GitHub, GitLab, Bitbucket file, or Gist URL here!" />
               </div>
               <div className="mt-4 hidden">
-                <label className="font-bold" htmlFor="e:to">Use this URL in production:</label> <input className="bg-white focus:outline-none border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal mt-2 mx-auto shadow-lg focus:shadow-xl text-center" id="e:to" name="to" type="text" />
+                <div>
+                  <label className="font-bold" htmlFor="e:to">Use this URL in production:</label>
+                  <input className="bg-white focus:outline-none border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal mt-2 mx-auto shadow-lg focus:shadow-xl text-center" id="e:to" name="to" type="text" />
+                </div>
               </div>
-              <pre className="font-monospace text-left bg-gray-200 p-4 rounded mt-8 hidden"></pre>
+              <pre className="font-monospace text-sm text-left bg-gray-200 p-4 rounded mt-8 overflow-auto hidden"></pre>
             </form>
 
             <div className="flex content-center flex-wrap">
@@ -350,6 +364,7 @@ class IndexPage extends React.Component {
       </Layout>
     );
   }
+
 }
 
 export default IndexPage;
