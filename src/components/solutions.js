@@ -56,7 +56,7 @@ function Solutions() {
             <h3 className="text-3xl font-bold mb-5">Because static files shouldn&rsquo;t be slow.</h3>
             <Link
               to="/github"
-              className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+              className="inline-block bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
             >
               Get Started
             </Link>
