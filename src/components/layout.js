@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 import Header from "./header";
 import Footer from "./footer";
+import Info from "./info";
 
 function Layout({ children }) {
   const data = useStaticQuery(graphql`
@@ -18,6 +19,7 @@ function Layout({ children }) {
 
   return (
     <div className="flex flex-col font-sans min-h-screen text-gray-900">
+      <Info text="8 Awesome Features Of Statically Free CDN" href="https://on.marsble.com/2DWpDN6" target="_blank" />
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main className="flex flex-col flex-1 md:justify-center mx-autow-full">
