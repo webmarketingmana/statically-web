@@ -7,7 +7,7 @@ function Solutions() {
   return (
     <section className="mt-20 mb-24 max-w-3xl mx-auto">
       <h2 className="text-center font-extrabold text-5xl mx-auto mb-16 max-w-lg">
-        An all-in-one solution for open source static assets delivery
+        The all-in-one solution for open source static asset delivery
       </h2>
 
       <div className="border border-gray-200 shadow-2xl rounded-lg p-12">
@@ -19,35 +19,35 @@ function Solutions() {
                   icon={Icons.faCheckCircle}
                   className="text-green-400 shadow rounded-full mr-3"
                 />
-                Easy of Use
+                Easy to use
               </li>
               <li className="p-1">
                 <FontAwesomeIcon
                   icon={Icons.faCheckCircle}
                   className="text-green-400 shadow rounded-full mr-3"
                 />
-                Unlimited Traffics
+                Unlimited traffic
               </li>
               <li className="p-1">
                 <FontAwesomeIcon
                   icon={Icons.faCheckCircle}
                   className="text-green-400 shadow rounded-full mr-3"
                 />
-                Unlimited Optimization
+                Unlimited otimization
               </li>
               <li className="p-1">
                 <FontAwesomeIcon
                   icon={Icons.faCheckCircle}
                   className="text-green-400 shadow rounded-full mr-3"
                 />
-              Unlimited Static Files
+              Unlimited static files
               </li>
               <li className="p-1">
                 <FontAwesomeIcon
                   icon={Icons.faCheckCircle}
                   className="text-green-400 shadow rounded-full mr-3"
                 />
-                Unlimited Integrations
+                Unlimited integrations
               </li>
             </ul>
           </div>
@@ -58,7 +58,7 @@ function Solutions() {
               to="/github"
               className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
             >
-              Get Started
+              Get started
             </Link>
           </div>
         </div>
