@@ -51,7 +51,7 @@ function Header({ siteTitle }) {
               to="/docs"
               className="block md:inline-block mt-4 md:mt-0 mr-6 text-gray-800 hover:text-red-500 focus:text-red-500"
             >
-              Docs
+              Help
             </Link>
 
             <Link
