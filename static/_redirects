@@ -13,5 +13,8 @@ https://www.staticaly.com/* https://statically.io/:splat 301!
 /become-a-sponsor-submission https://docs.google.com/forms/d/e/1FAIpQLSeo1ybwsGK-w4cqU_CrjSwIRJuogjH7WM9xyA5uQMfRG1Vozw/viewform 301!
 /network / 301!
 /newsletter / 301!
+/stats / 301!
+/rawgit / 301!
+/become-a-sponsor /support-statically 301!
 /sponsors /support-statically 301!
 /static/images/* /images/:splat 301!
