@@ -7,6 +7,7 @@ function SponsorPlatinum() {
         <a
           href="https://www.cdn77.com"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             src={'/images/sponsors/cdn77.svg'}
@@ -18,6 +19,7 @@ function SponsorPlatinum() {
         <a
           href="https://bunnycdn.com"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             src={'/images/sponsors/bunnycdn.svg'}
@@ -29,6 +31,7 @@ function SponsorPlatinum() {
         <a
           href="https://www.fastly.com"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             src={'/images/sponsors/fastly.svg'}
@@ -40,6 +43,7 @@ function SponsorPlatinum() {
         <a
           href="https://www.cloudflare.com"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             src={'/images/sponsors/cloudflare.svg'}

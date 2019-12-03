@@ -51,6 +51,7 @@ function SupportStaticallyPage() {
                 <a
                   href="https://uptimerobot.com"
                   className="sponsors-logo"
+                  target="_blank"
                 >
                   <img
                     className="m-auto"
@@ -68,6 +69,7 @@ function SupportStaticallyPage() {
                   <a
                     href="https://www.netlify.com"
                     className="sponsors-logo"
+                    target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
@@ -79,6 +81,7 @@ function SupportStaticallyPage() {
                   <a
                     href="https://www.statuspage.io"
                     className="sponsors-logo"
+                    target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
@@ -90,6 +93,7 @@ function SupportStaticallyPage() {
                   <a
                     href="https://www.cloudkilat.com"
                     className="sponsors-logo"
+                    target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
@@ -101,6 +105,7 @@ function SupportStaticallyPage() {
                   <a
                     href="https://cleanbrowsing.org"
                     className="sponsors-logo"
+                    target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"

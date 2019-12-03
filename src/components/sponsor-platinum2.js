@@ -7,6 +7,7 @@ function SponsorPlatinum2() {
         <a
           href="https://ns1.com"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             className="ns1 mx-auto md:mx-0"
@@ -19,6 +20,7 @@ function SponsorPlatinum2() {
         <a
           href="https://www.dediserve.com"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             className="max-w-xxs mx-auto"
@@ -31,6 +33,7 @@ function SponsorPlatinum2() {
         <a
           href="https://runcloud.io"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             className="max-w-xxs mx-auto"
@@ -43,6 +46,7 @@ function SponsorPlatinum2() {
         <a
           href="https://updown.io"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             className="max-w-xxs mx-auto"
@@ -55,6 +59,7 @@ function SponsorPlatinum2() {
         <a
           href="https://wp2static.com"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             className="wp2static max-w-xxs mx-auto"
@@ -67,6 +72,7 @@ function SponsorPlatinum2() {
         <a
           href="https://www.dewaweb.com"
           className="sponsors-logo"
+          target="_blank"
         >
           <img
             className="dewaweb max-w-xxs mx-auto"
