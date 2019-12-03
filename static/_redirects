@@ -14,4 +14,4 @@ https://www.staticaly.com/* https://statically.io/:splat 301!
 /network / 301!
 /newsletter / 301!
 /sponsors /support-statically 301!
-/static/images /images
+/static/images/* /images/:splat 301!
