@@ -1,0 +1,16 @@
+# Redirect default Netlify subdomain to primary domain
+https://statically.netlify.com/* https://statically.io/:splat 301!
+
+# Redirect .com to .io
+https://staticaly.com/* https://statically.io/:splat 301!
+https://www.staticaly.com/* https://statically.io/:splat 301!
+
+# Page redirections
+/img/ /images 301!
+/imgpx/ /images 301!
+/favicon/ /favicons 301!
+/badge/ /badges 301!
+/become-a-sponsor-submission/ https://docs.google.com/forms/d/e/1FAIpQLSeo1ybwsGK-w4cqU_CrjSwIRJuogjH7WM9xyA5uQMfRG1Vozw/viewform 301!
+/network/ / 301!
+/newsletter/ / 301!
+/sponsors/ /support-statically 301!
