@@ -45,7 +45,7 @@ function DocsPage() {
                 <Link to="/screenshot">Capture any website using Statically Screenshot</Link>
               </li>
               <li>
-                <Link to="/favicon">Get favicon from a domain without touching the domain itself</Link>
+                <Link to="/favicons">Serve favicon from any domain with Statically Favicons</Link>
               </li>
             </ul>
           </div>

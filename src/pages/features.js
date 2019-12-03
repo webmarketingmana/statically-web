@@ -266,7 +266,7 @@ function FeaturesPage() {
           </Link>
 
           <Link
-            to="/favicon"
+            to="/favicons"
             className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
           >
             <div className="px-6 py-4">
