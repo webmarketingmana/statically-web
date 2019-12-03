@@ -60,27 +60,27 @@ function ScreenshotPage() {
           <p className="text-lg font-bold mt-2">Getting full page screenshot</p>
           <a
             className="text-red-600"
-            href="https://cdn.statically.io/screenshot/example.com?full=1">
-              https://cdn.statically.io/screenshot/example.com<span className="font-bold">?full=1</span>
+            href="https://cdn.statically.io/screenshot/example.com?fullPage=true">
+              https://cdn.statically.io/screenshot/example.com<span className="font-bold">?fullPage=true</span>
           </a>
 
           <p className="text-lg font-bold mt-2">Getting mobile version</p>
           <a
             className="text-red-600"
-            href="https://cdn.statically.io/screenshot/example.com?mobile=1">
-              https://cdn.statically.io/screenshot/example.com<span className="font-bold">?mobile=1</span>
+            href="https://cdn.statically.io/screenshot/example.com?mobile=true">
+              https://cdn.statically.io/screenshot/example.com<span className="font-bold">?mobile=true</span>
           </a>
 
           <p className="text-lg font-bold mt-2">Applying various parameters</p>
           <a
             className="text-red-600 block"
-            href="https://cdn.statically.io/screenshot/example.com?mobile=1&full=1">
-              https://cdn.statically.io/screenshot/example.com<span className="font-bold">?mobile=1&full=1</span>
+            href="https://cdn.statically.io/screenshot/example.com?mobile=true&fullPage=true">
+              https://cdn.statically.io/screenshot/example.com<span className="font-bold">?mobile=true&fullPage=true</span>
           </a>
           <a
             className="text-red-600"
-            href="https://cdn.statically.io/screenshot/example.com?type=jpeg&quality=75&full=1">
-              https://cdn.statically.io/screenshot/example.com<span className="font-bold">?type=jpeg&quality=75&full=1</span>
+            href="https://cdn.statically.io/screenshot/example.com?type=jpeg&quality=75&fullPage=true">
+              https://cdn.statically.io/screenshot/example.com<span className="font-bold">?type=jpeg&quality=75&fullPage=true</span>
           </a>
 
           <p className="text-lg font-bold mt-2">Resizing screenshot image</p>
