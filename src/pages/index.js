@@ -5,9 +5,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Integrations from "../components/integrations";
 import Solutions from "../components/solutions";
-import Reviews from "../components/reviews";
-import FAQs from "../components/faqs";
+//import Reviews from "../components/reviews";
+//import FAQs from "../components/faqs";
 import Social from "../components/social";
+import SponsorPlatinum from "../components/sponsor-platinum";
+import SponsorPlatinum2 from "../components/sponsor-platinum2";
 
 const STATICALLY_PASTE_DATA = {
   // Debug
@@ -68,7 +70,10 @@ const STATICALLY_PASTE_DATA = {
   },
   'https?:\\/\\/gist\\.githubusercontent\\.com\\/(\\S+)': 'https://cdn.statically.io/gist/$1',
   'https?:\\/\\/gitlab\\.com\\/([^\\/]+\\/[^\\/]+)\\/(?:raw|blob)\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/gl/$1/$2',
-  'https?:\\/\\/bitbucket\\.org\\/([^\\/]+\\/[^\\/]+)\\/(?:raw|src)\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/bb/$1/$2'
+  'https?:\\/\\/bitbucket\\.org\\/([^\\/]+\\/[^\\/]+)\\/(?:raw|src)\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/bb/$1/$2',
+  'https?:\\/\\/core\\.svn\\.wordpress\\.org\\/tags\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/wp/c/$1',
+  'https?:\\/\\/plugins\\.svn\\.wordpress\\.org\\/([^\\/]+)\\/tags\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/wp/p/$1/$2',
+  'https?:\\/\\/themes\\.svn\\.wordpress\\.org\\/(\\S+)': 'https://cdn.statically.io/wp/t/$1',
 };
 
 class IndexPage extends React.Component {
@@ -121,8 +126,8 @@ class IndexPage extends React.Component {
             </h1>
 
             <form className="container mx-auto mb-20 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
-              <div className="statically-form">
-                <input className="bg-white focus:outline-none rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.handleInputChange} onPaste={this.handleInputChange} placeholder="Paste a GitHub, GitLab, Bitbucket file, or Gist URL here!" />
+              <div className="highlighted-form">
+                <input className="bg-white focus:outline-none rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.handleInputChange} onPaste={this.handleInputChange} placeholder="Paste a repository URL here!" />
               </div>
               <div className="mt-4 hidden">
                 <div>
@@ -167,51 +172,7 @@ class IndexPage extends React.Component {
                 Proudly powered by <strong>world-class</strong> CDN companies
               </h3>
 
-              <div className="flex content-center items-center max-w-xl mx-auto flex-wrap">
-                <div className="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 md:ml-3 md:mr-2 p-1">
-                  <a
-                    href="https://www.cdn77.com"
-                    className="sponsors-logo"
-                  >
-                    <img
-                      src={'images/sponsors/cdn77.svg'}
-                    />
-                  </a>
-                </div>
-
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-1">
-                  <a
-                    href="https://bunnycdn.com"
-                    className="sponsors-logo"
-                  >
-                    <img
-                      src={'images/sponsors/bunnycdn.svg'}
-                    />
-                  </a>
-                </div>
-
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 md:-mr-3 p-1">
-                  <a
-                    href="https://www.fastly.com"
-                    className="sponsors-logo"
-                  >
-                    <img
-                      src={'images/sponsors/fastly.svg'}
-                    />
-                  </a>
-                </div>
-
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-1">
-                  <a
-                    href="https://www.cloudflare.com"
-                    className="sponsors-logo"
-                  >
-                    <img
-                      src={'images/sponsors/cloudflare.svg'}
-                    />
-                  </a>
-                </div>
-              </div>
+              <SponsorPlatinum />
             </div>
           </section>
 
@@ -229,7 +190,7 @@ class IndexPage extends React.Component {
 
             <div className="flex content-center flex-wrap text-center">
               <Link
-                to="/network"
+                to="/features"
                 className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto"
               >
                 <div className="px-6 py-4">
@@ -257,7 +218,7 @@ class IndexPage extends React.Component {
               </Link>
 
               <Link
-                to="/github"
+                to="/docs"
                 className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">
@@ -291,13 +252,11 @@ class IndexPage extends React.Component {
 
           <Solutions />
 
+          {/**
           <div className="border-b"></div>
 
           <Reviews />
-
-          <div className="border-b"></div>
-
-          <FAQs />
+          */}
 
           <div className="border-b"></div>
 
@@ -306,55 +265,7 @@ class IndexPage extends React.Component {
               Supported by
             </h3>
 
-            <div className="flex content-center items-center max-w-xl mx-auto flex-wrap">
-              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
-                <a
-                  href="https://www.dediserve.com"
-                  className="sponsors-logo"
-                >
-                  <img
-                    className="max-w-xxs mx-auto"
-                    src={'images/sponsors/dediserve.svg'}
-                  />
-                </a>
-              </div>
-
-              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
-                <a
-                  href="https://runcloud.io"
-                  className="sponsors-logo"
-                >
-                  <img
-                    className="max-w-xxs mx-auto"
-                    src={'images/sponsors/runcloud.svg'}
-                  />
-                </a>
-              </div>
-
-              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
-                <a
-                  href="https://ns1.com"
-                  className="sponsors-logo"
-                >
-                  <img
-                    className="ns1 mx-auto md:mx-0"
-                    src={'images/sponsors/ns1.png'}
-                  />
-                </a>
-              </div>
-
-              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
-                <a
-                  href="https://updown.io"
-                  className="sponsors-logo"
-                >
-                  <img
-                    className="max-w-xxs mx-auto"
-                    src={'images/sponsors/updownio.svg'}
-                  />
-                </a>
-              </div>
-            </div>
+            <SponsorPlatinum2 />
           </section>
 
           <div className="border-b"></div>

@@ -18,11 +18,11 @@ function FeaturesPage() {
 
       <section className="bg-gray-900 text-gray-100 pt-20 pb-24 px-4 md:px-0">
         <div className="text-center mb-20 max-w-4xl mx-auto">
-          <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
-            A suite of modern technologies for fast &amp; better static assets
+          <h2 className="font-bold text-4xl max-w-2xl mx-auto mt-5 mb-5">
+            The suite of modern technologies for fast &amp; better static assets
           </h2>
           <p className="text-lg text-gray-300 mx-auto">
-            Statically is a powerful content delivery network designed for the future.
+            A powerful content delivery network designed for the future.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ function FeaturesPage() {
               Multi-CDN
             </h2>
             <p className="text-gray-300 mt-2">
-              lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              A combination of 4 CDN providers, choose the fastest for your location.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ function FeaturesPage() {
               Files Optimization
             </h2>
             <p className="text-gray-300 mt-2">
-              lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              Ease delivery by optimizing files before they are served to end-users.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ function FeaturesPage() {
               Robust Security
             </h2>
             <p className="text-gray-300 mt-2">
-              lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              Equipped with a modern security suite to prevent bad traffic and malware.
             </p>
           </div>
         </div>  
@@ -78,10 +78,10 @@ function FeaturesPage() {
         <div className="flex flex-wrap mb-16">
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 mb-20 sm:mb-0">
             <h2 className="font-bold text-4xl md:max-w-sm mb-5">
-              All your GitHub, GitLab, Bitbucket, &amp; WordPress files in a single CDN
+              All your GitHub, GitLab, Bitbucket &amp; WordPress files in a CDN
             </h2>
             <p className="text-lg">
-              Advance your development experiences with a powerful optimized Content Delivery Network that know your needs.
+              Advance your development experiences with a powerful optimized content delivery network that know your needs.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ function FeaturesPage() {
             <Link
             to="/custom"
             >
-              <div className="max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg mx-auto text-center px-6 py-4 mb-2">
+              <div className="w-32 rounded overflow-hidden border border-gray-200 border-solid shadow-lg mx-auto text-center px-6 py-4 mb-2">
                 <FontAwesomeIcon
                   icon={Icons.faCubes}
                   className="integration-logo mx-auto"
@@ -102,7 +102,7 @@ function FeaturesPage() {
               <svg width="20" height="30" viewBox="0 0 20 30" className="fetch"><path d="M10 40 L10 -10"></path></svg>
 
               <img
-                src="https://cdn.statically.io/img/statically.io/static/images/statically.png"
+                src={'/images/statically.png'}
                 className="integration-logo mx-auto my-2"
               />
 
@@ -150,7 +150,7 @@ function FeaturesPage() {
         </div>
       </section>
 
-      <div className="border-b"></div>
+      <div id="integrations" className="border-b"></div>
 
       <section className="mt-20 mb-24 max-w-5xl mx-auto px-8 lg:px-0">
         <div className="text-center mb-20">
@@ -158,7 +158,7 @@ function FeaturesPage() {
             Discover Our Features
           </h2>
           <p className="text-xl max-w-xl mx-auto">
-            lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+            Everything needed for modern web development.
           </p>
         </div>
 
@@ -174,7 +174,7 @@ function FeaturesPage() {
               />
               <div className="font-bold text-xl mb-2">GitHub</div>
               <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                The CDN for GitHub files, easy setup &amp; fast delivery with proper content type.
               </p>
             </div>
           </Link>
@@ -190,7 +190,7 @@ function FeaturesPage() {
               />
               <div className="font-bold text-xl mb-2">GitLab</div>
               <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                The CDN for GitLab files, easy setup &amp; fast delivery with proper content type.
               </p>
             </div>
           </Link>
@@ -207,13 +207,13 @@ function FeaturesPage() {
               />
               <div className="font-bold text-xl mb-2">Bitbucket</div>
               <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                The CDN for Bitbucket files, easy setup &amp; fast delivery with proper content type.
               </p>
             </div>
           </Link>
 
           <Link
-            to="/imgpx"
+            to="/images"
             className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-6"
           >
             <div className="px-6 py-4">
@@ -222,9 +222,9 @@ function FeaturesPage() {
                 className="mb-2"
                 size="2x"
               />
-              <div className="font-bold text-xl mb-2">Imgpx</div>
+              <div className="font-bold text-xl mb-2">Images</div>
               <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                The image CDN with resize, crop, filter, auto-webp, and more.
               </p>
             </div>
           </Link>
@@ -232,25 +232,8 @@ function FeaturesPage() {
 
         <div className="flex content-center flex-wrap">
           <Link
-            to="/libs"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-6"
-          >
-            <div className="px-6 py-4">
-              <FontAwesomeIcon
-                icon={Brands.faNpm}
-                className="mb-2"
-                size="2x"
-              />
-              <div className="font-bold text-xl mb-2">Libs</div>
-              <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            to="/wordpress"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
+              to="/wordpress"
+              className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-6"
           >
             <div className="px-6 py-4">
               <FontAwesomeIcon
@@ -260,13 +243,30 @@ function FeaturesPage() {
               />
               <div className="font-bold text-xl mb-2">WordPress</div>
               <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                The CDN for WordPress files, easy setup &amp; fast delivery with proper content type.
+              </p>
+            </div>
+          </Link>
+          
+          <Link
+            to="/screenshot"
+            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
+          >
+            <div className="px-6 py-4">
+              <FontAwesomeIcon
+                icon={Icons.faDesktop}
+                className="mb-2"
+                size="2x"
+              />
+              <div className="font-bold text-xl mb-2">Screenshot</div>
+              <p className="text-gray-700 text-base">
+                On-the-fly webpage screenshoter support with resize and webp format generation.
               </p>
             </div>
           </Link>
 
           <Link
-            to="/favicons"
+            to="/favicon"
             className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
           >
             <div className="px-6 py-4">
@@ -277,7 +277,7 @@ function FeaturesPage() {
               />
               <div className="font-bold text-xl mb-2">Favicons</div>
               <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+               The easy way to get favicon from a domain without touching the domain itself.
               </p>
             </div>
           </Link>
@@ -294,85 +294,16 @@ function FeaturesPage() {
               />
               <div className="font-bold text-xl mb-2">Custom endpoints</div>
               <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                Support open source projects by reflecting on their own origins.
               </p>
             </div>
           </Link>
         </div>
-
-        <div className="flex content-center flex-wrap">
-          <Link
-            to="/maps"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-ml-5"
-          >
-            <div className="px-6 py-4">
-              <FontAwesomeIcon
-                icon={Icons.faMapMarkedAlt}
-                className="mb-2"
-                size="2x"
-              />
-              <div className="font-bold text-xl mb-2">Maps</div>
-              <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            to="/font-awesome"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
-          >
-            <div className="px-6 py-4">
-              <FontAwesomeIcon
-                icon={Brands.faFontAwesome}
-                className="mb-2"
-                size="2x"
-              />
-              <div className="font-bold text-xl mb-2">Font Awesome</div>
-              <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            to="/google-fonts"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto"
-          >
-            <div className="px-6 py-4">
-              <FontAwesomeIcon
-                icon={Brands.faGoogle}
-                className="mb-2"
-                size="2x"
-              />
-              <div className="font-bold text-xl mb-2">Google Fonts</div>
-              <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            to="/flags"
-            className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden hover:shadow-lg mx-auto md:-mr-5"
-          >
-            <div className="px-6 py-4">
-              <FontAwesomeIcon
-                icon={Regular.faFlag}
-                className="mb-2"
-                size="2x"
-              />
-              <div className="font-bold text-xl mb-2">Country Flags</div>
-              <p className="text-gray-700 text-base">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
-              </p>
-            </div>
-          </Link>
-        </div>
-
       </section>
 
       <div className="border-b"></div>
+
+      {/**
 
       <section className="bg-gray-100 pt-20 pb-20 border-b">
         <div className="flex content-center flex-wrap max-w-5xl mx-auto">
@@ -385,7 +316,7 @@ function FeaturesPage() {
                 />
                 <div className="font-bold text-lg mb-2">HTTP/2</div>
                 <p className="text-gray-700 text-base">
-                  lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                  Boost content delivery with the latest HTTP/2 features and improvements.
                 </p>
               </div>
             </div>
@@ -577,6 +508,8 @@ function FeaturesPage() {
 
       </section>
 
+      */}
+
       <section className="mt-20 mb-24 max-w-4xl mx-auto p-0 md:px-8">
         <div className="flex content-center items-center flex-wrap">
           <div className="sm:w-1/2 md:w-1/2 lg:w-1/2 mb-4 mx-auto p-4 text-center sm:text-left">
@@ -588,7 +521,7 @@ function FeaturesPage() {
               to="/support-statically"
               className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
             >
-              Become A Backer
+              Become A Sponsor
             </Link>
           </div>
         </div>

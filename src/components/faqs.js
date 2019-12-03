@@ -83,17 +83,7 @@ class FAQs extends React.Component {
               </header>
               <div>
                 <div className="pl-8 pr-8 pb-5 text-grey-darkest">
-                  <ul className="pl-4">
-                    <li class Name="pb-2">
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li className="pb-2">
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li className="pb-2">
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                  </ul>
+                  <p>Statically is the only next-gen CDN that provides a suite of modifications, optimization, security, ease of integration so that users do not have to bother to integrate into other services.</p>
                 </div>
               </div>
             </div>

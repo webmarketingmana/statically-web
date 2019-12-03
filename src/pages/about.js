@@ -18,7 +18,7 @@ function AboutPage() {
           <h2 className="inline-block mt-8">
             <img
               className="h-20"
-              src={'images/statically.png'}
+              src={'/images/statically.png'}
             />
           </h2>
         </section>
@@ -36,34 +36,6 @@ function AboutPage() {
             </p>
           </div>
 
-          <div className="flex content-center flex-wrap">
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 max-w-xxs">Fast</div>
-                <p className="text-gray-700 text-base">
-                  For fast files delivery from any location.
-                </p>
-              </div>
-            </div>
-
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 max-w-xxs">Easy</div>
-                <p className="text-gray-700 text-base">
-                  No traffic limits or throttling. Files are served via super fast global CDNs.
-                </p>
-              </div>
-            </div>
-            
-            <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 max-w-xxs">Secure &amp; Reliable</div>
-                <p className="text-gray-700 text-base">
-                  Backed by the world-leading DNS, CDN, &amp; Cloud computing companies makes our infrastructure fast, reliable, and secure.
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
 
         <div className="border-b"></div>
@@ -81,7 +53,7 @@ function AboutPage() {
               <h2 className="text-2xl font-bold">
                 Frans Allen
                 <img
-                  className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/misc/flags/id.png"
+                  className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/flags/id.png"
                   title="Indonesia"
                 />
               </h2>
@@ -93,7 +65,7 @@ function AboutPage() {
                 @fransallen
               </a>
               <p className="mt-2">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                Founder of Statically. Has a passion for creating scalable applications and improving developer experience. He loves music and cinematography.
               </p>
             </div>
 
@@ -102,43 +74,69 @@ function AboutPage() {
               <h2 className="text-2xl font-bold">
                 Taufik Nurrohman
                 <img
-                  className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/misc/flags/id.png"
+                  className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/flags/id.png"
                   title="Indonesia"
                 />
               </h2>
               <a
-                href="https://twitter.com/fransallen"
+                href="https://github.com/tovic"
                 className="text-sm text-red-500"
                 target="_blank"
               >
                 @tovic
               </a>
               <p className="mt-2">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+                Creator of Mecha CMS, a flat-file content management system. He called himself “indie developer”, meaning without being dependent on the help of third-party libraries.
               </p>
             </div>
 
             <div className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto p-6">
-              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src="https://cdn.statically.io/img/github.com/leonstafford.png" />
+              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src="https://cdn.statically.io/img/image.flaticon.com/icons/svg/149/149452.svg" />
               <h2 className="text-2xl font-bold">
-                Leon Stafford
+                You
+                {/**
                 <img
-                  className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/misc/flags/au.png"
-                  title="Melbourne"
+                  className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/flags/us.png"
+                  title="Country"
                 />
+                */}
               </h2>
               <a
-                href="https://twitter.com/fransallen"
+                href="/contact"
                 className="text-sm text-red-500"
-                target="_blank"
               >
-                @leonvolunteers
+                @ contact us now !!
               </a>
               <p className="mt-2">
-                lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+               Are you someone who likes speed and security? So you are in the right section, join Statically now, helping us maintain services and guide users to make our services even better.
               </p>
             </div>
           </div>  
+
+        </section>
+
+        <div id="newsletter" className="border-b"></div>
+
+        <section className="mt-20 mb-24 max-w-6xl mx-auto px-4 md:px-0">
+          <div className="text-center mb-20">
+            <h2 className="font-bold text-5xl mx-auto mt-5 mb-5">
+              Newsletter
+            </h2>
+            <p className="mx-auto text-xl">
+              Don't miss up any news and updates from Statically.
+            </p>
+          </div>
+
+          <form action="https://marsble.us18.list-manage.com/subscribe/post?u=4dfd4ae04677bf4f6248182fc&id=397ea962f2" className="bg-white border shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-xl mx-auto" name="Contact Form" method="POST">
+            <input type="hidden" name="form-name" value="Contact Form" />
+            <div className="mb-4">
+              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="EMAIL" type="text" placeholder="frans@example.com" />
+            </div>
+
+             <button className="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="submit">
+              Submit
+            </button>
+          </form>
 
         </section>
 
@@ -155,7 +153,7 @@ function AboutPage() {
                 to="/support-statically"
                 className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
               >
-                Become A Backer
+                Become A Sponsor
               </Link>
             </div>
           </div>

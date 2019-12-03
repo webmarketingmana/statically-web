@@ -93,6 +93,19 @@ function Integrations() {
           <span>You</span>
         </div>
       </div>
+
+      <div className="mt-10 text-center">
+        <Link
+          to="/features#integrations"
+          className="text-lg text-red-600 font-bold"
+        >
+          <span>More integration</span>
+          <FontAwesomeIcon
+            icon={Icons.faArrowRight}
+            className="ml-2"
+          />
+        </Link>
+      </div>
     </section>
   );
 }

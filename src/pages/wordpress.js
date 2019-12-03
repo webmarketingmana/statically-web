@@ -3,12 +3,12 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-function WordpressPages() {
+function WordpressPage() {
   return (
     <Layout>
       <SEO
-        title="WordPress"
-        keywords={[`statically`]}
+        title="WordPress Integration"
+        keywords={[`statically`, `wordpress`, `integration`]}
       />
 
       <div className="px-4 py-8 md:p-8">
@@ -19,8 +19,16 @@ function WordpressPages() {
               WordPress + Statically
             </h2>
             <p className="text-lg mx-auto">
-              lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              Loads file from WordPress fully optimized and deliver fast with the right of content type.
             </p>
+          </div>
+
+          <div id="content">
+            <h3 className="text-lg font-bold mb-5">1. Copy file URL from WordPress SVN</h3>
+            <img className="border mb-5" src={'/images/docs/wordpress-docs-0.png'}/>
+
+            <h3 className="text-lg font-bold mb-5">2. Visit Statically.io and paste file URL from WordPress SVN into Statically form</h3>
+            <img className="border mb-5" src={'/images/docs/wordpress-docs-1.png'}/>
           </div>
         </section>
 
@@ -29,4 +37,4 @@ function WordpressPages() {
   );
 }
 
-export default WordpressPages;
+export default WordpressPage;

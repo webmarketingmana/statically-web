@@ -25,7 +25,7 @@ function NetworkPage() {
           </div>
         </section>
 
-        <section id="network-map" className="mt-20 mb-24 max-w-6xl mx-auto">
+        <section id="network-map" className="mt-20 max-w-6xl mx-auto">
           <div className="net">
               
               <img src={networkMap} alt="network map" />
@@ -432,6 +432,38 @@ function NetworkPage() {
                 <li className="cs-pop pop-cs-UPG"></li>
               </ul>
             </div>
+        </section>
+
+        <section className="mb-24 max-w-4xl mx-auto">
+        <div className="flex content-center flex-wrap bg-white shadow px-8 py-6 rounded border">
+          <div className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden mx-auto">
+            <div className="font-bold text-3xl mb-2">Title</div>
+            <p className="text-gray-700 text-xl">
+              Lorem ipsum
+            </p>
+          </div>
+
+          <div className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden mx-auto">
+            <div className="font-bold text-3xl mb-2">Title</div>
+            <p className="text-gray-700 text-xl">
+              Lorem ipsum
+            </p>
+          </div>
+
+          <div className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden mx-auto">
+            <div className="font-bold text-3xl mb-2">Title</div>
+            <p className="text-gray-700 text-xl">
+              Lorem ipsum
+            </p>
+          </div>
+
+          <div className="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 mb-4 max-w-sm overflow-hidden mx-auto">
+            <div className="font-bold text-3xl mb-2">Title</div>
+            <p className="text-gray-700 text-xl">
+              Lorem ipsum
+            </p>
+          </div>
+        </div>
         </section>
 
       </div>
