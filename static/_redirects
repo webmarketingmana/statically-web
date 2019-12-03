@@ -16,5 +16,6 @@ https://www.staticaly.com/* https://statically.io/:splat 301!
 /stats / 301!
 /rawgit / 301!
 /become-a-sponsor /support-statically 301!
+/donate /support-statically 301!
 /sponsors /support-statically 301!
 /static/images/* /images/:splat 301!
