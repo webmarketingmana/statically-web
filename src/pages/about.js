@@ -70,7 +70,7 @@ function AboutPage() {
             </div>
 
             <div className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto p-6">
-              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src="https://cdn.statically.io/img/image.flaticon.com/icons/svg/149/149452.svg" />
+              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src={'/images/people.svg'} />
               <h2 className="text-2xl font-bold">
                 You
                 {/**
