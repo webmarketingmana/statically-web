@@ -70,27 +70,6 @@ function AboutPage() {
             </div>
 
             <div className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto p-6">
-              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src="https://cdn.statically.io/img/github.com/tovic.png" />
-              <h2 className="text-2xl font-bold">
-                Taufik Nurrohman
-                <img
-                  className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/flags/id.png"
-                  title="Indonesia"
-                />
-              </h2>
-              <a
-                href="https://github.com/tovic"
-                className="text-sm text-red-500"
-                target="_blank"
-              >
-                @tovic
-              </a>
-              <p className="mt-2">
-                Creator of Mecha CMS, a flat-file content management system. He called himself “indie developer”, meaning without being dependent on the help of third-party libraries.
-              </p>
-            </div>
-
-            <div className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto p-6">
               <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src="https://cdn.statically.io/img/image.flaticon.com/icons/svg/149/149452.svg" />
               <h2 className="text-2xl font-bold">
                 You
