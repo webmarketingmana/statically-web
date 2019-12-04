@@ -74,6 +74,7 @@ const STATICALLY_PASTE_DATA = {
   'https?:\\/\\/core\\.svn\\.wordpress\\.org\\/tags\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/wp/c/$1',
   'https?:\\/\\/plugins\\.svn\\.wordpress\\.org\\/([^\\/]+)\\/tags\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/wp/p/$1/$2',
   'https?:\\/\\/themes\\.svn\\.wordpress\\.org\\/(\\S+)': 'https://cdn.statically.io/wp/t/$1',
+  'https?:\\/\\/(?:cdn.)?rawgit(?:hub)?\\.com\\/(\\S+)': 'https://cdn.statically.io/gh/$1',
 };
 
 class IndexPage extends React.Component {
