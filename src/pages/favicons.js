@@ -8,6 +8,7 @@ function FaviconsPage() {
     <Layout>
       <SEO
         title="Favicons"
+        description="The simple &amp; powerful API to serve favicon from any domain."
         keywords={[`statically`]}
       />
 

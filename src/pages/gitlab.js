@@ -8,6 +8,7 @@ function GitlabPage() {
     <Layout>
       <SEO
         title="GitLab Integration"
+        description="Loads file from GitLab fully optimized and deliver fast with the right of content type."
         keywords={[`statically`, `gitlab`, `integration`]}
       />
 
@@ -15,9 +16,9 @@ function GitlabPage() {
 
         <section className="mt-20 mb-24 max-w-4xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
+            <h1 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
               GitLab + Statically
-            </h2>
+            </h1>
             <p className="text-lg mx-auto">
               Loads file from GitLab fully optimized and deliver fast with the right of content type.
             </p>

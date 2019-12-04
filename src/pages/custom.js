@@ -12,6 +12,7 @@ function CustomPage() {
     <Layout>
       <SEO
         title="Custom Integration"
+        description="Statically loves OSS communities. Manage open source project and need CDN for it? Let us know!"
         keywords={[`statically`, `custom`, `integration`]}
       />
 
@@ -19,9 +20,9 @@ function CustomPage() {
 
         <section className="mt-20 mb-24 max-w-4xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
+            <h1 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
               Your project + Statically
-            </h2>
+            </h1>
             <p className="text-lg mx-auto">
               Manage open source project and need CDN for it? Let us know!
             </p>

@@ -9,14 +9,15 @@ function TermsPage() {
     <Layout>
       <SEO
         title="Terms of Services"
-        keywords={[`statically`]}
+        description="Learn Statically's Terms of Services"
+        keywords={[`statically`, `terms`]}
       />
 
       <div className="max-w-2xl mx-auto px-4 md:px-0">
 
         <section className="mt-20 mb-24 text-center">
 
-          <h2 className="font-bold text-5xl">Terms of Services</h2>
+          <h1 className="font-bold text-5xl">Terms of Services</h1>
           <p className="my-4"><strong className="font-semibold">Effective Date:</strong> 2019/12/03</p>
 
         </section>

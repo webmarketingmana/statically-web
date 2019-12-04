@@ -9,16 +9,17 @@ function DocsPage() {
     <Layout>
       <SEO
         title="Docs"
-        keywords={[`statically`]}
+        description="This page is an overview of the Statically documentation and related resources."
+        keywords={[`statically`, `documentation`, `tutorial`]}
       />
 
       <div className="px-4 py-8 md:p-8">
 
         <section className="mt-20 mb-24 max-w-4xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
+            <h1 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
               Statically Documentation
-            </h2>
+            </h1>
             <p className="text-lg mx-auto">
               This page is an overview of the Statically documentation and related resources.
             </p>

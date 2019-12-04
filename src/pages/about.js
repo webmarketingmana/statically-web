@@ -9,7 +9,7 @@ function AboutPage() {
     <Layout>
       <SEO
         title="About"
-        keywords={[`statically`]}
+        keywords={[`statically`, `about`, `team`]}
       />
 
       <div className="">
@@ -28,9 +28,9 @@ function AboutPage() {
         <section className="mt-20 mb-24 max-w-4xl mx-auto px-4 md:px-0">
           <div className="text-center mb-20">
             <span className="font-bold text-purple-500 uppercase">Our Mission</span>
-            <h2 className="font-bold text-5xl mx-auto mt-5 mb-5">
+            <h1 className="font-bold text-5xl mx-auto mt-5 mb-5">
               Our mission is to make static files easy to manage and fast to deliver.
-            </h2>
+            </h1>
             <p className="mx-auto text-xl">
               We help files distribution <strong>faster, smaller, reliable, and more efficient</strong> than ever.
             </p>

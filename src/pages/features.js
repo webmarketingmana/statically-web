@@ -13,14 +13,15 @@ function FeaturesPage() {
     <Layout>
       <SEO
         title="Features"
+        description="Explore features in Statically, use them for your modern web development."
         keywords={[`statically`, `optimization`, `images`, `cdn`, `features`]}
       />
 
       <section className="bg-gray-900 text-gray-100 pt-20 pb-24 px-4 md:px-0">
         <div className="text-center mb-20 max-w-4xl mx-auto">
-          <h2 className="font-bold text-4xl max-w-2xl mx-auto mt-5 mb-5">
+          <h1 className="font-bold text-4xl max-w-2xl mx-auto mt-5 mb-5">
             The suite of modern technologies for fast &amp; better static assets
-          </h2>
+          </h1>
           <p className="text-lg text-gray-300 mx-auto">
             A powerful content delivery network designed for the future.
           </p>

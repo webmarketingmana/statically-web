@@ -8,16 +8,16 @@ function ContactPage() {
     <Layout>
       <SEO
         title="Contact"
-        keywords={[`statically`]}
+        keywords={[`statically`, `info`, `contact`]}
       />
 
       <div className="px-4 py-8 md:p-8">
 
         <section className="mt-20 mb-24 max-w-4xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
+            <h1 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
               We love to hear from you!
-            </h2>
+            </h1>
           </div>
 
           <form className="bg-white border shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-xl mx-auto" name="Contact Form" method="POST" data-netlify="true">

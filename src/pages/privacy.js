@@ -9,14 +9,15 @@ function PrivacyPage() {
     <Layout>
       <SEO
         title="Privacy Policy"
-        keywords={[`statically`]}
+        description="This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data."
+        keywords={[`statically`, `privacy`]}
       />
 
       <div className="max-w-2xl mx-auto px-4 md:px-0">
 
         <section className="mt-20 mb-24 text-center">
 
-          <h2 className="font-bold text-5xl">Privacy Policy</h2>
+          <h1 className="font-bold text-5xl">Privacy Policy</h1>
           <p className="my-4"><strong className="font-semibold">Effective Date:</strong> 2019/12/03</p>
 
         </section>

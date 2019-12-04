@@ -63,6 +63,7 @@ class ImagesPage extends React.Component {
       <Layout>
         <SEO
           title="Images"
+          description="The free &amp; fast image optimization and transformation for modern web development."
           keywords={[`statically`]}
         />
 

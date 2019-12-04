@@ -8,6 +8,7 @@ function ScreenshotPage() {
     <Layout>
       <SEO
         title="Screenshot"
+        description="The free &amp; fast website screenshot and transformation for modern web development."
         keywords={[`statically`]}
       />
 

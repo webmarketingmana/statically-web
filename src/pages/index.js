@@ -114,7 +114,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="Home"
+          title="Statically - The free, fast &amp; modern CDN for open source projects, WordPress, images, and any static assets."
           keywords={[`statically`, `open source`, `cdn`, `github`]}
         />
 
