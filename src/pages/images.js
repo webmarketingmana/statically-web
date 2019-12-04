@@ -156,7 +156,7 @@ class ImagesPage extends React.Component {
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Works with your website</div>
                   <p className="text-gray-700 text-base">
-                    Allows pulling content from your website to reduce server load from delivering static assets.
+                    Allows pulling content from your website and reduce server load from delivering static assets.
                   </p>
                 </div>
               </div>
