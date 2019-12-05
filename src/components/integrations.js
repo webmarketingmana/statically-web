@@ -40,8 +40,8 @@ function Integrations() {
           className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto"
         >
           <div className="text-center px-6 py-4">
-            <img
-              src={'images/integrations/github.svg'}
+            <FontAwesomeIcon
+              icon={Brands.faGithub}
               className="integration-logo mx-auto"
             />
             <span className="text-sm mt-5">GitHub</span>
@@ -79,7 +79,7 @@ function Integrations() {
         <svg width="20" height="30" viewBox="0 0 20 30" className="fetch"><path d="M10 40 L10 -10"></path></svg>
 
         <img
-          src={'images/statically.png'}
+          src="https://cdn.statically.io/img/statically.io/images/statically.png?w=80"
           className="integration-logo mx-auto my-2"
         />
 

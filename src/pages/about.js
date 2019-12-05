@@ -18,7 +18,7 @@ function AboutPage() {
           <h2 className="inline-block mt-8">
             <img
               className="h-20"
-              src={'/images/statically.png'}
+              src="https://cdn.statically.io/img/statically.io/images/statically.png?w=80"
             />
           </h2>
         </section>
