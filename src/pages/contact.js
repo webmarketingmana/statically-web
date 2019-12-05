@@ -26,21 +26,21 @@ function ContactPage() {
               <label className="block text-gray-700 text-sm font-bold mb-1" htmlFor="email">
                 Email
               </label>
-              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="text" placeholder="frans@example.com" />
+              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="text" placeholder="frans@example.com" required />
             </div>
             
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-1" htmlFor="subject">
                 Subject
               </label>
-              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="url" name="subject" type="text" placeholder="Hey, please support our open source project" />
+              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="url" name="subject" type="text" placeholder="Hey, please support our open source project" required />
             </div>
 
             <div className="mb-4">
               <label className="block tracking-wide text-gray-700 text-sm font-bold mb-1" htmlFor="message">
                 Message
               </label>
-              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Your message goes here"></textarea>
+              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Your message goes here" required></textarea>
             </div>
 
              <button className="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="submit">
