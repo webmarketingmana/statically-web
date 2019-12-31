@@ -62,7 +62,7 @@ class FAQs extends React.Component {
               </header>
               <div>
                 <div className="pl-8 pr-8 pb-5 text-grey-darkest">
-                  <p>Accordion content.</p>
+                  <p>Statically is a new kind of next generation CDN. Statically support for various modification, and optimization out of the box so you can load your static files fully control and faster.</p>
                 </div>
               </div>
             </div>
@@ -83,17 +83,7 @@ class FAQs extends React.Component {
               </header>
               <div>
                 <div className="pl-8 pr-8 pb-5 text-grey-darkest">
-                  <ul className="pl-4">
-                    <li className="pb-2">
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li className="pb-2">
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                    <li className="pb-2">
-                      Lorem ipsum dolor sit amet.
-                    </li>
-                  </ul>
+                  <p>Statically is the only next-gen CDN that provides a suite of modifications, optimization, security, ease of integration so that users do not have to bother to integrate into other services.</p>
                 </div>
               </div>
             </div>

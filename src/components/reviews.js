@@ -4,7 +4,7 @@ function Reviews() {
   return (
     <section className="mt-20 mb-24 max-w-4xl mx-auto px-4 md:px-0">
       <h2 className="text-center font-extrabold text-5xl mx-auto mb-20">
-        What people say about Statically?
+        What do people say about Statically?
       </h2>
 
       <div className="flex content-center flex-wrap">

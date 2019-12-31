@@ -5,9 +5,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Integrations from "../components/integrations";
 import Solutions from "../components/solutions";
-import Reviews from "../components/reviews";
-import FAQs from "../components/faqs";
+//import Reviews from "../components/reviews";
+//import FAQs from "../components/faqs";
 import Social from "../components/social";
+import SponsorPlatinum from "../components/sponsor-platinum";
+import SponsorPlatinum2 from "../components/sponsor-platinum2";
 
 const STATICALLY_PASTE_DATA = {
   // Debug
@@ -68,7 +70,11 @@ const STATICALLY_PASTE_DATA = {
   },
   'https?:\\/\\/gist\\.githubusercontent\\.com\\/(\\S+)': 'https://cdn.statically.io/gist/$1',
   'https?:\\/\\/gitlab\\.com\\/([^\\/]+\\/[^\\/]+)\\/(?:raw|blob)\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/gl/$1/$2',
-  'https?:\\/\\/bitbucket\\.org\\/([^\\/]+\\/[^\\/]+)\\/(?:raw|src)\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/bb/$1/$2'
+  'https?:\\/\\/bitbucket\\.org\\/([^\\/]+\\/[^\\/]+)\\/(?:raw|src)\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/bb/$1/$2',
+  'https?:\\/\\/core\\.svn\\.wordpress\\.org\\/tags\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/wp/c/$1',
+  'https?:\\/\\/plugins\\.svn\\.wordpress\\.org\\/([^\\/]+)\\/tags\\/(.+\\..+?)(?:\\?.*)?': 'https://cdn.statically.io/wp/p/$1/$2',
+  'https?:\\/\\/themes\\.svn\\.wordpress\\.org\\/(\\S+)': 'https://cdn.statically.io/wp/t/$1',
+  'https?:\\/\\/(?:cdn.)?rawgit(?:hub)?\\.com\\/(\\S+)': 'https://cdn.statically.io/gh/$1',
 };
 
 class IndexPage extends React.Component {
@@ -109,7 +115,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="Home"
+          title="Statically - The free, fast &amp; modern CDN for open source projects, WordPress, images, and any static assets."
           keywords={[`statically`, `open source`, `cdn`, `github`]}
         />
 
@@ -117,12 +123,12 @@ class IndexPage extends React.Component {
 
           <section className="mb-24 text-center max-w-4xl mx-auto px-4 md:px-0">
             <h1 className="text-3xl font-bold inline-block max-w-3xl my-8 p-3">
-              A free, fast, &amp; modern CDN for open source projects, WordPress, images, and any static assets.
+              The free, fast &amp; modern CDN for open source projects, WordPress, images, and any static assets.
             </h1>
 
             <form className="container mx-auto mb-20 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
-              <div>
-                <input className="bg-white focus:outline-none border border-gray-300 rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.handleInputChange} onPaste={this.handleInputChange} placeholder="Paste a GitHub, GitLab, Bitbucket file, or Gist URL here!" />
+              <div className="highlighted-form">
+                <input className="bg-white focus:outline-none rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.handleInputChange} onPaste={this.handleInputChange} placeholder="Paste a repository URL here!" />
               </div>
               <div className="mt-4 hidden">
                 <div>
@@ -138,14 +144,14 @@ class IndexPage extends React.Component {
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Built for developers</div>
                   <p className="text-gray-700 text-base">
-                    Works with any static assets, support various modification, and optimization.
+                    Works with any static assets, supports modification and optimization.
                   </p>
                 </div>
               </div>
 
               <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Unlimited traffics</div>
+                  <div className="font-bold text-xl mb-2">Unlimited traffic</div>
                   <p className="text-gray-700 text-base">
                     No traffic limits or throttling. Files are served via super fast global CDNs.
                   </p>
@@ -163,55 +169,11 @@ class IndexPage extends React.Component {
             </div>
 
             <div className="mt-20">
-              <h3 className="italic mb-5">
-                Proudly empowered by <strong>world-class</strong> CDN companies
+              <h3 className="mb-5">
+                Proudly powered by <strong>world-class</strong> CDN companies
               </h3>
 
-              <div className="flex content-center items-center max-w-xl mx-auto flex-wrap">
-                <div className="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 md:ml-3 md:mr-2 p-1">
-                  <a
-                    href="https://www.cdn77.com"
-                    className="sponsors-logo"
-                  >
-                    <img
-                      src={'images/sponsors/cdn77.svg'}
-                    />
-                  </a>
-                </div>
-
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-1">
-                  <a
-                    href="https://bunnycdn.com"
-                    className="sponsors-logo"
-                  >
-                    <img
-                      src={'images/sponsors/bunnycdn.svg'}
-                    />
-                  </a>
-                </div>
-
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 md:-mr-3 p-1">
-                  <a
-                    href="https://www.fastly.com"
-                    className="sponsors-logo"
-                  >
-                    <img
-                      src={'images/sponsors/fastly.svg'}
-                    />
-                  </a>
-                </div>
-
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-1">
-                  <a
-                    href="https://www.cloudflare.com"
-                    className="sponsors-logo"
-                  >
-                    <img
-                      src={'images/sponsors/cloudflare.svg'}
-                    />
-                  </a>
-                </div>
-              </div>
+              <SponsorPlatinum />
             </div>
           </section>
 
@@ -223,21 +185,21 @@ class IndexPage extends React.Component {
                 Everything you need to serve static assets.
               </h2>
               <p className="max-w-2xl mx-auto text-xl">
-                Serve your open source files quickly, without having to manually configure DNS, SSL, CDN or hosting. Apply various image transformations and manipulations just on the spot.
+                Serve your open source files quickly, without having to manually configure DNS, SSL, CDN or hosting. Apply image transformation and filters directly.
               </p>
             </div>
 
-            <div className="flex content-center flex-wrap">
+            <div className="flex content-center flex-wrap text-center">
               <Link
-                to="/network"
-                className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-ml-6"
+                to="/features"
+                className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto"
               >
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 max-w-xxs">
-                    Fast &amp; secure, from any location
+                  <div className="font-bold text-xl mb-2">
+                    Fast &amp; secure, anywhere
                   </div>
                   <p className="text-gray-700 text-base">
-                    Combining 4 CDN providers into one and pick the fastest for your location.
+                    4 CDN providers combined into one, picking the fastest for your location.
                   </p>
                 </div>
               </Link>
@@ -247,20 +209,20 @@ class IndexPage extends React.Component {
                 className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto"
               >
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 max-w-xxs">
+                  <div className="font-bold text-xl mb-2">
                     On-the-fly optimization
                   </div>
                   <p className="text-gray-700 text-base">
-                    Optimize static assets on-the-fly only with URL. Auto-webp, resize, crop, filter for images.
+                    Automatic image resize, crop, filter, webp, and more.
                   </p>
                 </div>
               </Link>
 
               <Link
-                to="/github"
-                className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-mr-6">
+                to="/docs"
+                className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 max-w-xxs">
+                  <div className="font-bold text-xl mb-2">
                     Developer friendly
                   </div>
                   <p className="text-gray-700 text-base">
@@ -276,10 +238,10 @@ class IndexPage extends React.Component {
           <section className="mt-20 mb-24 max-w-lg mx-auto px-4 md:px-0">
             <div className="text-center mb-10">
               <h2 className="font-extrabold text-5xl mx-auto mb-5">
-                Integrations
+                Fits your workflow
               </h2>
               <p className="text-xl">
-                All your favourite apps and tools, integrated with Statically
+                All your favorite apps and tools, integrated with Statically
               </p>
             </div>
 
@@ -291,70 +253,20 @@ class IndexPage extends React.Component {
 
           <Solutions />
 
+          {/**
           <div className="border-b"></div>
 
           <Reviews />
-
-          <div className="border-b"></div>
-
-          <FAQs />
+          */}
 
           <div className="border-b"></div>
 
           <section className="mt-20 mb-24 max-w-4xl mx-auto px-4 md:px-0">
-            <h3 className="text-center italic mb-5">
+            <h3 className="text-center mb-5">
               Supported by
             </h3>
 
-            <div className="flex content-center items-center max-w-xl mx-auto flex-wrap">
-              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-1">
-                <a
-                  href="https://www.dediserve.com"
-                  className="sponsors-logo"
-                >
-                  <img
-                    className="max-w-xxs mx-auto"
-                    src={'images/sponsors/dediserve.svg'}
-                  />
-                </a>
-              </div>
-
-              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-1">
-                <a
-                  href="https://runcloud.io"
-                  className="sponsors-logo"
-                >
-                  <img
-                    className="max-w-xxs mx-auto"
-                    src={'images/sponsors/runcloud.svg'}
-                  />
-                </a>
-              </div>
-
-              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-1">
-                <a
-                  href="https://updown.io"
-                  className="sponsors-logo"
-                >
-                  <img
-                    className="max-w-xxs mx-auto"
-                    src={'images/sponsors/updownio.svg'}
-                  />
-                </a>
-              </div>
-
-              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-1">
-                <a
-                  href="https://ns1.com"
-                  className="sponsors-logo"
-                >
-                  <img
-                    className="ns1 mx-auto md:mx-0"
-                    src={'images/sponsors/ns1.png'}
-                  />
-                </a>
-              </div>
-            </div>
+            <SponsorPlatinum2 />
           </section>
 
           <div className="border-b"></div>

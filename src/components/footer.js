@@ -23,31 +23,7 @@ function Footer() {
               <Link
                 to="/features"
               >
-                Overview
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/user-stories"
-              >
-                User stories
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/docs"
-              >
-                Integrations
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/security"
-              >
-                Security
+                Features
               </Link>
             </li>
           </ul>
@@ -65,33 +41,9 @@ function Footer() {
 
             <li>
               <Link
-                to="/blog"
+                to="/about#newsletter"
               >
-                Blog
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/press"
-              >
-                Press
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/logos"
-              >
-                Logos
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/careers"
-              >
-                Careers
+                Newsletter
               </Link>
             </li>
           </ul>
@@ -101,25 +53,9 @@ function Footer() {
           <ul>
             <li>
               <Link
-                to="/help"
+                to="/contact"
               >
-                Help
-              </Link>
-            </li>
-
-            <li>
-              <a
-                href="https://community.statically.io"
-              >
-                Community
-              </a>
-            </li>
-
-            <li>
-              <Link
-                to="/stats"
-              >
-                Statistics
+                Contact
               </Link>
             </li>
 
@@ -131,6 +67,7 @@ function Footer() {
               </a>
             </li>
 
+            {/**
             <li>
               <Link
                 to="/network"
@@ -138,6 +75,8 @@ function Footer() {
                 Network
               </Link>
             </li>
+            */}
+
           </ul>
         </div>
       </nav>
@@ -165,6 +104,7 @@ function Footer() {
           />
         </a>
 
+        {/**
         <Link
           className="px-4"
           to="/shop"
@@ -174,6 +114,7 @@ function Footer() {
             icon={Icons.faTshirt}
           />
         </Link>
+        */}
       </nav>
 
       <nav className="max-w-xl mx-auto text-center mb-5 text-base">
@@ -190,16 +131,9 @@ function Footer() {
         >
           Privacy
         </Link>
-
-        <Link
-          className="px-2"
-          to="/abuse"
-        >
-          Abuse
-        </Link>
       </nav>
 
-      <p className="font-normal text-center text-gray-600 text-base">&copy; 2019 Statically</p>
+      <p className="font-normal text-center text-gray-600 text-base">&copy; 2020 Statically</p>
     </footer>
 
   );

@@ -54,39 +54,20 @@ function Header({ siteTitle }) {
               Docs
             </Link>
 
-            <Link
-              to="/support-statically"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 text-gray-800 hover:text-red-500 focus:text-red-500"
-            >
-              Support us!
-            </Link>
-
-            <Link
-              to="/sponsors"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 text-gray-800 hover:text-red-500 focus:text-red-500"
-            >
-              Sponsors
-            </Link>
-
+            {/**
             <Link
               to="/network"
               className="block md:inline-block mt-4 md:mt-0 mr-6 text-gray-800 hover:text-red-500 focus:text-red-500"
             >
               Network
             </Link>
+            */}
 
             <Link
-              to="/blog"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 text-gray-800 hover:text-red-500 focus:text-red-500"
+              to="/support-statically"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 text-red-500"
             >
-              Blog
-            </Link>
-
-            <Link
-              to="/contact"
-              className="block md:inline-block mt-4 md:mt-0 text-gray-800 hover:text-red-500 focus:text-red-500"
-            >
-              Help
+              Support us!
             </Link>
           </div>
         </div>

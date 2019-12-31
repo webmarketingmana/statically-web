@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 
 import Layout from "../components/layout";
@@ -8,19 +9,46 @@ function DocsPage() {
     <Layout>
       <SEO
         title="Docs"
-        keywords={[`statically`]}
+        description="This page is an overview of the Statically documentation and related resources."
+        keywords={[`statically`, `documentation`, `tutorial`]}
       />
 
       <div className="px-4 py-8 md:p-8">
 
         <section className="mt-20 mb-24 max-w-4xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
+          <div className="text-center mb-10">
+            <h1 className="font-bold text-4xl max-w-xl mx-auto mt-5 mb-5">
               Statically Documentation
-            </h2>
+            </h1>
             <p className="text-lg mx-auto">
-              lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
+              This page is an overview of the Statically documentation and related resources.
             </p>
+          </div>
+
+          <div className="mb-20">
+            <ul class="list-disc">
+              <li>
+                <Link to="/github">Serve GitHub files with Statically</Link>
+              </li>
+              <li>
+                <Link to="/gitlab">Serve GitLab files with Statically</Link>
+              </li>
+              <li>
+                <Link to="/bitbucket">Serve Bitbucket files with Statically</Link>
+              </li>
+              <li>
+                <Link to="/wordpress">Serve WordPress SVN files with Statically</Link>
+              </li>
+              <li>
+                <Link to="/images">Optimize and transform image with Statically Images</Link>
+              </li>
+              <li>
+                <Link to="/screenshot">Capture any website using Statically Screenshot</Link>
+              </li>
+              <li>
+                <Link to="/favicons">Serve favicon from any domain with Statically Favicons</Link>
+              </li>
+            </ul>
           </div>
         </section>
 

@@ -4,22 +4,21 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const date = new Date;
-
 function PrivacyPage() {
   return (
     <Layout>
       <SEO
         title="Privacy Policy"
-        keywords={[`statically`]}
+        description="This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data."
+        keywords={[`statically`, `privacy`]}
       />
 
       <div className="max-w-2xl mx-auto px-4 md:px-0">
 
         <section className="mt-20 mb-24 text-center">
 
-          <h2 className="font-bold text-5xl">Privacy Policy</h2>
-          <p className="my-4"><strong className="font-semibold">Effective Date:</strong> {date.getFullYear() + '/' + date.getMonth().toString().padStart(2, '0') + '/' + date.getDate().toString().padStart(2, '0')}</p>
+          <h1 className="font-bold text-5xl">Privacy Policy</h1>
+          <p className="my-4"><strong className="font-semibold">Effective Date:</strong> 2019/12/03</p>
 
         </section>
 
@@ -33,21 +32,10 @@ function PrivacyPage() {
           <h5 className="font-bold mt-4">Personal Data</h5>
           <p className="my-4">While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (&ldquo;Personal Data&rdquo;). Personally identifiable information may include, but is not limited to:</p>
           <ul className="my-4 ml-8 list-disc">
-            <li>Cookies and Usage Data</li>
-            <li>Site Logo</li>
+            <li>Usage Data</li>
           </ul>
           <h5 className="font-bold">Usage Data</h5>
           <p className="my-4">We may also collect information on how the Service is accessed and used (&ldquo;Usage Data&rdquo;). This Usage Data may include information such as your computer&rsquo;s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
-          <h5 className="font-bold">Tracking &amp; Cookies Data</h5>
-          <p className="my-4">We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.</p>
-          <p className="my-4">Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service.</p>
-          <p className="my-4">You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
-          <p className="my-4">Examples of Cookies we use:</p>
-          <ul className="my-4 ml-8 list-disc">
-            <li><strong>Session Cookies.</strong> We use Session Cookies to operate our Service.</li>
-            <li><strong>Preference Cookies.</strong> We use Preference Cookies to remember your preferences and various settings.</li>
-            <li><strong>Security Cookies.</strong> We use Security Cookies for security purposes.</li>
-          </ul>
           <h3 className="font-bold text-2xl">Use of Data</h3>
           <p className="my-4">Statically uses the collected data for various purposes:</p>
           <ul className="my-4 ml-8 list-disc">
@@ -79,26 +67,20 @@ function PrivacyPage() {
           <h3 className="font-bold text-2xl">Service Providers</h3>
           <p className="my-4">We may employ third party companies and individuals to facilitate our Service (&ldquo;Service Providers&rdquo;), to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.</p>
           <p className="my-4">These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
-          <h4 className="font-bold text-xl">Analytics</h4>
-          <p className="my-4">We may use third-party Service Providers to monitor and analyze the use of our Service.</p>
-          <ul className="my-4 ml-8 list-disc">
-            <li><strong>Marsble Pixel</strong> for <strong>statically.io</strong></li>
-          </ul>
-          <p className="my-4">For more information on the privacy practices of Marsble, please visit the following web page: <a className="text-red-500" href="https://marsble.com/privacy">https://marsble.com/privacy</a></p>
-          <h4 className="font-bold text-xl">CDN for Main Site (Content Delivery Network)</h4>
+          <h4 className="font-bold text-xl">CDN (Content Delivery Network) for Main Site</h4>
           <p className="my-4">We use third-party Service Providers to serve all of our traffic under the domain <strong>statically.io</strong>. This means all of these providers have access to your IP address and other information sent by your web browser. This information is used for analytics and security purposes. Neither we nor our providers track any individual user.</p>
           <ul className="my-4 ml-8 list-disc">
             <li>
               <p className="my-4"><strong>Netlify</strong></p>
-              <p className="my-4">For more information on the privacy practices of CloudFlare, please visit the following web page: <a className="text-red-500" href="https://www.netlify.com/privacy/">https://www.netlify.com/privacy/</a></p>
+              <p className="my-4">For more information on the privacy practices of Netlify, please visit the following web page: <a className="text-red-500" href="https://www.netlify.com/privacy/">https://www.netlify.com/privacy/</a></p>
             </li>
           </ul>
           <h4 className="font-bold text-xl">CDN (Content Delivery Network)</h4>
           <p className="my-4">We use third-party Service Providers to serve all of our traffic under the domain <strong>cdn.statically.io</strong>. This means all of these providers have access to your IP address and other information sent by your web browser. This information is used for analytics and security purposes. Neither we nor our providers track any individual user.</p>
           <ul className="my-4 ml-8 list-disc">
             <li>
-              <p className="my-4"><strong>CloudFlare</strong></p>
-              <p className="my-4">For more information on the privacy practices of CloudFlare, please visit the following web page: <a className="text-red-500" href="https://www.cloudflare.com/security-policy/">https://www.cloudflare.com/security-policy/</a></p>
+              <p className="my-4"><strong>Cloudflare</strong></p>
+              <p className="my-4">For more information on the privacy practices of Cloudflare, please visit the following web page: <a className="text-red-500" href="https://www.cloudflare.com/security-policy/">https://www.cloudflare.com/security-policy/</a></p>
             </li>
             <li>
               <p className="my-4"><strong>Fastly</strong></p>
@@ -117,8 +99,8 @@ function PrivacyPage() {
           <p className="my-4">Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
           <p className="my-4">We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
           <h3 className="font-bold text-2xl">Children&rsquo;s Privacy</h3>
-          <p className="my-4">Our Service does not address anyone under the age of 18 (&ldquo;Children&rdquo;).</p>
-          <p className="my-4">We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
+          <p className="my-4">Our Service does not address anyone under the age of 13 (&ldquo;Children&rdquo;).</p>
+          <p className="my-4">We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
           <h3 className="font-bold text-2xl">Changes To This Privacy Policy</h3>
           <p className="my-4">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
           <p className="my-4">We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the &ldquo;effective date&rdquo; at the top of this Privacy Policy.</p>

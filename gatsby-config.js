@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Statically`,
-    description: `The official Statically website`,
-    author: `@fransallen`
+    description: `The free, fast & modern CDN for open source projects, WordPress, images, and any static assets.`,
+    author: `@staticallyio`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,7 +13,7 @@ module.exports = {
         short_name: `statically`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        theme_color: `#e53e3e`,
         display: `minimal-ui`,
         icon: `src/images/statically.png`
       }
