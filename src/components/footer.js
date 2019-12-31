@@ -133,7 +133,7 @@ function Footer() {
         </Link>
       </nav>
 
-      <p className="font-normal text-center text-gray-600 text-base">&copy; 2019 Statically</p>
+      <p className="font-normal text-center text-gray-600 text-base">&copy; 2020 Statically</p>
     </footer>
 
   );
