@@ -61,7 +61,7 @@ function Footer() {
 
             <li>
               <a
-                href="https://status.marsble.com"
+                href="https://status.statically.io"
               >
                 Status
               </a>
