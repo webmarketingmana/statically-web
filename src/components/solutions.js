@@ -33,7 +33,7 @@ function Solutions() {
                   icon={Icons.faCheckCircle}
                   className="text-green-400 shadow rounded-full mr-3"
                 />
-                Unlimited otimization
+                Unlimited optimization
               </li>
               <li className="p-1">
                 <FontAwesomeIcon
