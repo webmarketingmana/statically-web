@@ -95,7 +95,7 @@ function Footer() {
 
         <a
           className="px-4"
-          href="https://github.com/marsble/statically"
+          href="https://github.com/staticallyio/statically"
           title="GitHub"
           target="_blank"
         >
