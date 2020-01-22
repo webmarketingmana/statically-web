@@ -126,7 +126,7 @@ class IndexPage extends React.Component {
               The free, fast &amp; modern CDN for open source projects, WordPress, images, and any static assets.
             </h1>
 
-            <div className="mb-5"><strong className="font-bold">Pro Tip:</strong> Add <code className="bg-black text-white rounded p-1">.min</code> to <strong className="font-bold">CSS, JS, SVG, HTML, and XML</strong> files to get the minified version.</div>
+            <div className="mb-5"><strong className="font-bold">ProTip:</strong> Add <code className="bg-black text-white rounded p-1">.min</code> to URL of <strong className="font-bold">CSS, JS, SVG, HTML, and XML</strong> files to get the minified version.</div>
 
             <form className="container mx-auto mb-20 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
               <div className="highlighted-form">
