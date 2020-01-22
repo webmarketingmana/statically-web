@@ -126,9 +126,11 @@ class IndexPage extends React.Component {
               The free, fast &amp; modern CDN for open source projects, WordPress, images, and any static assets.
             </h1>
 
+            <div className="mb-5"><strong className="font-bold">Pro Tip:</strong> Add <code className="bg-black text-white rounded p-1">.min</code> to <strong className="font-bold">CSS, JS, SVG, HTML, and XML</strong> files to get the minified version.</div>
+
             <form className="container mx-auto mb-20 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
               <div className="highlighted-form">
-                <input className="bg-white focus:outline-none rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.handleInputChange} onPaste={this.handleInputChange} placeholder="Paste a repository URL here!" />
+                <input className="bg-white focus:outline-none rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.handleInputChange} onPaste={this.handleInputChange} placeholder="https://github.com/:user/:repo/blob/:tag/:file" title="Paste a file URL from repository here!"/>
               </div>
               <div className="mt-4 hidden">
                 <div>
