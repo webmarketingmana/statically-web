@@ -126,9 +126,7 @@ class IndexPage extends React.Component {
               The free, fast &amp; modern CDN for open source projects, WordPress, images, and any static assets.
             </h1>
 
-            <div className="mb-5"><strong className="font-bold">ProTip:</strong> Add <code className="bg-black text-white rounded p-1">.min</code> to URL of <strong className="font-bold">CSS, JS, SVG, HTML, and XML</strong> files to get the minified version.</div>
-
-            <form className="container mx-auto mb-20 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
+            <form className="container mx-auto mb-5 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
               <div className="highlighted-form">
                 <input className="bg-white focus:outline-none rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.handleInputChange} onPaste={this.handleInputChange} placeholder="https://github.com/:user/:repo/blob/:tag/:file" title="Paste a file URL from repository here!"/>
               </div>
@@ -141,7 +139,9 @@ class IndexPage extends React.Component {
               <pre className="font-monospace text-sm text-left bg-gray-200 p-4 rounded mt-8 overflow-auto hidden"></pre>
             </form>
 
-            <div className="flex content-center flex-wrap">
+            <div className="text-sm"><strong className="font-bold">ProTip:</strong> Add <code className="bg-black text-white rounded p-1">.min</code> to URL of <strong className="font-bold">CSS, JS, SVG, HTML, and XML</strong> files to get the minified version.</div>
+
+            <div className="flex content-center flex-wrap mt-16">
               <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Built for developers</div>
