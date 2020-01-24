@@ -74,14 +74,14 @@ function Header({ siteTitle }) {
               href="https://github.com/staticallyio/statically"
               className="block md:inline-block mt-4 md:mt-0 mr-3 text-red-500"
             >
-              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/stars/staticallyio/statically.svg?style=social"/>
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/stars/staticallyio/statically.svg?style=social&amp;cacheSeconds=3600"/>
             </a>
 
             <a
               href="https://github.com/staticallyio/statically"
               className="block md:inline-block mt-4 md:mt-0 text-red-500"
             >
-              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/follow/staticallyio.svg?label=Follow"/>
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/follow/staticallyio.svg?label=Follow&amp;cacheSeconds=3600"/>
             </a>
           </div>
         </div>
