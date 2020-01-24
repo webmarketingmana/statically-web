@@ -4,6 +4,9 @@
 node_modules
 yarn-error.log
 
+# Workers site
+workers-site
+
 # Build directory
 /public
 
@@ -12,3 +15,6 @@ yarn-error.log
 
 # deployment-specific configs
 now.json
+
+# Wrangler
+wrangler.toml

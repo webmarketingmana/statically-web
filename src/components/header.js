@@ -69,6 +69,13 @@ function Header({ siteTitle }) {
             >
               Support us!
             </Link>
+
+            <a
+              href="https://github.com/staticallyio/statically"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 text-red-500"
+            >
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/stars/marsble/statically.svg?style=social"/>
+            </a>
           </div>
         </div>
       </div>
