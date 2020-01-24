@@ -78,7 +78,7 @@ function Header({ siteTitle }) {
             </a>
 
             <a
-              href="https://github.com/staticallyio/statically"
+              href="https://twitter.com/staticallyio"
               className="block md:inline-block mt-4 md:mt-0 text-red-500"
             >
               <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/follow/staticallyio.svg?label=Follow&amp;cacheSeconds=3600"/>
