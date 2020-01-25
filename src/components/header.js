@@ -17,6 +17,7 @@ function Header({ siteTitle }) {
           <img
             className="h-8"
             src={'/images/statically_wide.svg'}
+            alt="Statically"
           />
         </Link>
 
@@ -74,14 +75,14 @@ function Header({ siteTitle }) {
               href="https://github.com/staticallyio/statically"
               className="block md:inline-block mt-4 md:mt-0 mr-3 text-red-500"
             >
-              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/stars/staticallyio/statically.svg?style=social&amp;cacheSeconds=3600"/>
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/stars/staticallyio/statically.svg?style=social&amp;cacheSeconds=3600" alt="stars"/>
             </a>
 
             <a
               href="https://twitter.com/staticallyio"
               className="block md:inline-block mt-4 md:mt-0 text-red-500"
             >
-              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/follow/staticallyio.svg?label=Follow&amp;cacheSeconds=3600"/>
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/follow/staticallyio.svg?label=Follow&amp;cacheSeconds=3600" alt="Twitter"/>
             </a>
           </div>
         </div>

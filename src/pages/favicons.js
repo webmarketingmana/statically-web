@@ -35,18 +35,22 @@ function FaviconsPage() {
           <img
             className="inline ml-0 m-1"
             src="https://cdn.statically.io/favicon/google.com"
+            alt="favicon 1"
           />
           <img
             className="inline ml-0 m-1"
             src="https://cdn.statically.io/favicon/duckduckgo.com"
+            alt="favicon 2"
           />
           <img
             className="inline m-1"
             src="https://cdn.statically.io/favicon/github.com"
+            alt="favicon 3"
           />
           <img
             className="inline m-1"
             src="https://cdn.statically.io/favicon/statically.io"
+            alt="favicon 4"
           />
 
           <p className="text-lg font-bold mt-5">Forcing to use SSL</p>

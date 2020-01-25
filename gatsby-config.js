@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Statically`,
     description: `The free, fast & modern CDN for open source projects, WordPress, images, and any static assets.`,
-    author: `@staticallyio`
+    siteUrl: 'https://statically.io',
+    author: `@fransallen`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +26,7 @@ module.exports = {
         tailwind: true,
         purgeOnly: [`src/css/style.css`]
       }
-    }
+    },
+    `gatsby-plugin-sitemap`
   ]
 };

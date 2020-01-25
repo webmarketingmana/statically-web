@@ -86,7 +86,7 @@ function Footer() {
           className="px-4"
           href="https://twitter.com/staticallyio"
           title="Twitter"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <FontAwesomeIcon
             icon={Brands.faTwitter}
@@ -97,7 +97,7 @@ function Footer() {
           className="px-4"
           href="https://github.com/staticallyio/statically"
           title="GitHub"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <FontAwesomeIcon
             icon={Brands.faGithub}

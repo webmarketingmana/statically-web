@@ -52,11 +52,12 @@ function SupportStaticallyPage() {
                 <a
                   href="https://uptimerobot.com"
                   className="sponsors-logo"
-                  target="_blank"
+                  rel="noopener" target="_blank"
                 >
                   <img
                     className="m-auto"
                     src={'/images/sponsors/uptimerobot.png'}
+                    alt="Uptime Robot"
                   />
                 </a>
               </div>
@@ -70,11 +71,12 @@ function SupportStaticallyPage() {
                   <a
                     href="https://www.netlify.com"
                     className="sponsors-logo"
-                    target="_blank"
+                    rel="noopener" target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
                       src={'/images/sponsors/netlify.svg'}
+                      alt="Netlify"
                     />
                   </a>
                 </div>
@@ -82,11 +84,12 @@ function SupportStaticallyPage() {
                   <a
                     href="https://www.statuspage.io"
                     className="sponsors-logo"
-                    target="_blank"
+                    rel="noopener" target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
                       src={'/images/sponsors/statuspageio.svg'}
+                      alt="StatusPage"
                     />
                   </a>
                 </div>
@@ -94,11 +97,12 @@ function SupportStaticallyPage() {
                   <a
                     href="https://www.cloudkilat.com"
                     className="sponsors-logo"
-                    target="_blank"
+                    rel="noopener" target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
                       src={'/images/sponsors/cloudkilat.png'}
+                      alt="Cloudkilat"
                     />
                   </a>
                 </div>
@@ -106,11 +110,12 @@ function SupportStaticallyPage() {
                   <a
                     href="https://cleanbrowsing.org"
                     className="sponsors-logo"
-                    target="_blank"
+                    rel="noopener" target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
                       src={'/images/sponsors/cleanbrowsing.png'}
+                      alt="CleanBrowsing"
                     />
                   </a>
                 </div>

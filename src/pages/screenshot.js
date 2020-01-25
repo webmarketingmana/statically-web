@@ -35,6 +35,7 @@ function ScreenshotPage() {
           <img
             className="border max-w-md mt-2 mb-5"
             src="https://cdn.statically.io/screenshot/statically.io"
+            alt="Screenshot"
           />
 
           <p className="text-lg font-bold">Changing type to PNG</p>

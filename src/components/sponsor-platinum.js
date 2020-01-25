@@ -7,10 +7,11 @@ function SponsorPlatinum() {
         <a
           href="https://www.fastly.com"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             src={'/images/sponsors/fastly.svg'}
+            alt="Fastly"
           />
         </a>
       </div>
@@ -19,10 +20,11 @@ function SponsorPlatinum() {
         <a
           href="https://www.cloudflare.com"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             src={'/images/sponsors/cloudflare.svg'}
+            alt="Cloudflare"
           />
         </a>
       </div>
@@ -31,10 +33,11 @@ function SponsorPlatinum() {
         <a
           href="https://bunnycdn.com"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             src={'/images/sponsors/bunnycdn.svg'}
+            alt="BunnyCDN"
           />
         </a>
       </div>
@@ -43,10 +46,11 @@ function SponsorPlatinum() {
         <a
           href="https://www.cdn77.com"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             src={'/images/sponsors/cdn77.svg'}
+            alt="CDN77"
           />
         </a>
       </div>

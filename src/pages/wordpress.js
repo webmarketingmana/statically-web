@@ -26,10 +26,10 @@ function WordpressPage() {
 
           <div id="content">
             <h3 className="text-lg font-bold mb-5">1. Copy file URL from WordPress SVN</h3>
-            <img className="border mb-5" src={'/images/docs/wordpress-docs-0.png'}/>
+            <img className="border mb-5" src={'/images/docs/wordpress-docs-0.png'} alt="WordPress"/>
 
             <h3 className="text-lg font-bold mb-5">2. Visit Statically.io and paste file URL from WordPress SVN into Statically form</h3>
-            <img className="border mb-5" src={'/images/docs/wordpress-docs-1.png'}/>
+            <img className="border mb-5" src={'/images/docs/wordpress-docs-1.png'} alt="WordPress"/>
           </div>
         </section>
 

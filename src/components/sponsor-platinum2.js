@@ -7,11 +7,12 @@ function SponsorPlatinum2() {
         <a
           href="https://ns1.com"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             className="ns1 mx-auto md:mx-0"
             src={'/images/sponsors/ns1.png'}
+            alt="NS1"
           />
         </a>
       </div>
@@ -20,11 +21,12 @@ function SponsorPlatinum2() {
         <a
           href="https://www.dediserve.com"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             className="max-w-xxs mx-auto"
             src={'/images/sponsors/dediserve.svg'}
+            alt="Dediserve"
           />
         </a>
       </div>
@@ -33,11 +35,12 @@ function SponsorPlatinum2() {
         <a
           href="https://runcloud.io"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             className="max-w-xxs mx-auto"
             src={'/images/sponsors/runcloud.svg'}
+            alt="RunCloud"
           />
         </a>
       </div>
@@ -46,11 +49,12 @@ function SponsorPlatinum2() {
         <a
           href="https://wp2static.com"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             className="wp2static max-w-xxs mx-auto"
             src={'/images/sponsors/wp2static.png'}
+            alt="WP2Static"
           />
         </a>
       </div>
@@ -59,11 +63,12 @@ function SponsorPlatinum2() {
         <a
           href="https://www.dewaweb.com"
           className="sponsors-logo"
-          target="_blank"
+          rel="noopener" target="_blank"
         >
           <img
             className="dewaweb max-w-xxs mx-auto"
             src={'/images/sponsors/dewaweb.png'}
+            alt="Dewaweb"
           />
         </a>
       </div>

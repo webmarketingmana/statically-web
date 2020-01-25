@@ -26,10 +26,10 @@ function GitlabPage() {
 
           <div id="content">
             <h3 className="text-lg font-bold mb-5">1. Copy file URL from GitLab</h3>
-            <img className="border mb-5" src={'/images/docs/gitlab-docs-0.png'}/>
+            <img className="border mb-5" src={'/images/docs/gitlab-docs-0.png'} alt="GitLab"/>
 
             <h3 className="text-lg font-bold mb-5">2. Visit Statically.io and paste file URL from GitLab into Statically form</h3>
-            <img className="border mb-5" src={'/images/docs/gitlab-docs-1.png'}/>
+            <img className="border mb-5" src={'/images/docs/gitlab-docs-1.png'} alt="GitLab"/>
           </div>
         </section>
 

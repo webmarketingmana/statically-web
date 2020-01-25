@@ -19,6 +19,7 @@ function AboutPage() {
             <img
               className="h-20"
               src="https://cdn.statically.io/img/statically.io/images/statically.png?w=80"
+              alt="Statically"
             />
           </h2>
         </section>
@@ -49,18 +50,19 @@ function AboutPage() {
 
           <div className="flex content-center flex-wrap">
             <div className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto p-6">
-              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src="https://cdn.statically.io/img/github.com/fransallen.png" />
+              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src="https://cdn.statically.io/img/github.com/fransallen.png" alt="Frans Allen"/>
               <h2 className="text-2xl font-bold">
                 Frans Allen
                 <img
                   className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/flags/id.png"
+                  alt="Indonesia"
                   title="Indonesia"
                 />
               </h2>
               <a
                 href="https://twitter.com/fransallen"
                 className="text-sm text-red-500"
-                target="_blank"
+                rel="noopener" target="_blank"
               >
                 @fransallen
               </a>
@@ -70,13 +72,14 @@ function AboutPage() {
             </div>
 
             <div className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto p-6">
-              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src={'/images/people.svg'} />
+              <img className="w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src={'/images/people.svg'} alt="People"/>
               <h2 className="text-2xl font-bold">
                 You
                 {/**
                 <img
                   className="w-6 h-6 inline-block rounded-full ml-2 border" src="https://cdn.statically.io/flags/us.png"
                   title="Country"
+                  alt="You"
                 />
                 */}
               </h2>

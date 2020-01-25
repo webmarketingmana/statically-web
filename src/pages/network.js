@@ -28,7 +28,7 @@ function NetworkPage() {
         <section id="network-map" className="mt-20 max-w-6xl mx-auto">
           <div className="net">
               
-              <img src={networkMap} alt="network map" />
+              <img src={networkMap} alt="Network Map"/>
 
               <ul className="bunnycdn">
                 {/** BunnyCDN North America */}

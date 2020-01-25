@@ -26,10 +26,10 @@ function BitbucketPage() {
 
           <div id="content">
             <h3 className="text-lg font-bold mb-5">1. Copy file URL from Bitbucket</h3>
-            <img className="border mb-5" src={'/images/docs/bitbucket-docs-0.png'}/>
+            <img className="border mb-5" src={'/images/docs/bitbucket-docs-0.png'} alt="Bitbucket"/>
 
             <h3 className="text-lg font-bold mb-5">2. Visit Statically.io and paste file URL from Bitbucket into Statically form</h3>
-            <img className="border mb-5" src={'/images/docs/bitbucket-docs-1.png'}/>
+            <img className="border mb-5" src={'/images/docs/bitbucket-docs-1.png'} alt="Bitbucket"/>
           </div>
         </section>
 
