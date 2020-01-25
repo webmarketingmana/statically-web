@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 
 function Info({ text, href, target, color }) {
   return (
-    <a className={`block p-2 bg-${color}-600 hover:bg-${color}-700 text-${color}-100 border-b border-${color}-800 hover:border-${color}-900 text-center`} href={href} target={target} role="alert">{text}</a>
+    <a className={`block p-2 bg-${color}-500 hover:bg-${color}-600 text-${color}-100 border-b font-bold text-center`} href={href} rel="noopener" target={target} role="alert">{text}</a>
   );
 }
 
 Info.defaultProps = {
-  color: 'blue',
+  color: 'indigo',
   href: '/',
-  target: '_self',
+  target: '_blank',
   text: 'Hey!'
 };
 

@@ -306,7 +306,6 @@ function FeaturesPage() {
       <div className="border-b"></div>
 
       {/**
-
       <section className="bg-gray-100 pt-20 pb-20 border-b">
         <div className="flex content-center flex-wrap max-w-5xl mx-auto">
             <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">

@@ -1,12 +1,11 @@
 import { Link } from "gatsby";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as Icons from "@fortawesome/free-solid-svg-icons";
+//import * as Icons from "@fortawesome/free-solid-svg-icons";
 import * as Brands from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
-
     <footer className="mt-20 mb-24 text-lg text-gray-700 text-center font-bold">
       <nav className="flex flex-wrap content-center max-w-xl mx-auto mb-5">
         <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 pb-6 sm:pr-12">
