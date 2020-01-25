@@ -133,7 +133,7 @@ function AboutPage() {
             <div className="sm:w-1/2 md:w-1/2lg:w-1/2 mb-4 mx-auto p-4 text-center">
               <Link
                 to="/support-statically"
-                className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+                className="inline-block bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
               >
                 Become A Sponsor
               </Link>
