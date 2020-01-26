@@ -14,7 +14,6 @@ workers-site
 .DS_Store
 
 # deployment-specific configs
+.netlify
 now.json
-
-# Wrangler
 wrangler.toml

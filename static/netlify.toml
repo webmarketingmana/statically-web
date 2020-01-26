@@ -1,0 +1,107 @@
+# Build
+[build]
+  command = "gatsby build"
+  publish = "public"
+
+# Redirects
+[[redirects]]
+  from = "/img"
+  to = "/images/"
+  status = 301
+[[redirects]]
+  from = "/imgpx"
+  to = "/images/"
+  status = 301
+[[redirects]]
+  from = "/favicon"
+  to = "/favicons/"
+  status = 301
+[[redirects]]
+  from = "/badge"
+  to = "/badges/"
+  status = 301
+[[redirects]]
+  from = "/become-a-sponsor"
+  to = "/support-statically/"
+  status = 301
+[[redirects]]
+  from = "/donate"
+  to = "/support-statically/"
+  status = 301
+[[redirects]]
+  from = "/sponsors"
+  to = "/support-statically/"
+  status = 301
+[[redirects]]
+  from = "/network"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/newsletter"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/stats"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/rawgit"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/love"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/static/images/*"
+  to = "/images/:splat"
+  status = 301
+[[redirects]]
+  from = "/become-a-sponsor-submission"
+  to = "https://docs.google.com/forms/d/e/1FAIpQLSeo1ybwsGK-w4cqU_CrjSwIRJuogjH7WM9xyA5uQMfRG1Vozw/viewform"
+  status = 301
+[[redirects]]
+  from = "https://statically.netlify.com/*"
+  to = "https://statically.io/:splat"
+  status = 301
+[[redirects]]
+  from = "https://staticaly.com/*"
+  to = "https://statically.io/:splat"
+  status = 301
+[[redirects]]
+  from = "https://www.staticaly.com/*"
+  to = "https://statically.io/:splat"
+  status = 301
+
+# Rules for all pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=7200"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Feature-Policy = "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'none'; speaker 'none'; sync-xhr 'none'; usb 'none'; vibrate 'none'; vr 'none'; wake-lock 'none'; webauthn 'none'; xr-spatial-tracking 'none'"
+
+# Static files
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
