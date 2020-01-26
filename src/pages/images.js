@@ -123,7 +123,7 @@ class ImagesPage extends React.Component {
 
                   <div className="mx-3 mt-4">
                     <label className="flex items-center h-4" htmlFor="e:filter">
-                      <input className="mr-2" name="filter" onChange={this.handleInputChange} type="checkbox" value="grayscale" />
+                      <input className="mr-2" id="e:filter" name="filter" onChange={this.handleInputChange} type="checkbox" value="grayscale" />
                       <span>Grayscale</span>
                     </label>
                   </div>
