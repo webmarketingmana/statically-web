@@ -77,12 +77,18 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Cache-Control = "public, max-age=7200"
+    Cache-Control = "public, max-age=43200"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Feature-Policy = "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'none'; speaker 'none'; sync-xhr 'none'; usb 'none'; vibrate 'none'; vr 'none'; wake-lock 'none'; webauthn 'none'; xr-spatial-tracking 'none'"
+
+# Custom headers for homepage only
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
 
 # Static files
 [[headers]]
