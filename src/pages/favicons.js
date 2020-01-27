@@ -1,142 +1,83 @@
-import { Link } from "gatsby";
-
 import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-class FaviconsPage extends React.Component {
+function FaviconsPage() {
+  return (
+    <Layout>
+      <SEO
+        title="Favicons"
+        description="The simple &amp; powerful API to serve favicon from any domain."
+        keywords={[`statically`, `favicons`]}
+      />
 
-  createQueryString(data) {
-    let results = [], k, v;
-    for (k in data) {
-      v = data[k];
-      v !== "" && results.push(encodeURIComponent(k) + (v === true ? "" : '=' + encodeURIComponent(v)));
-    }
-    return results.length ? '?' + results.join('&') : "";
-  }
+      <div className="px-4 py-8 md:p-8">
 
-  isValidDomain = value => {
-    return /^https?:\/\/[^\s\/]+(\.\w+)\/?$/i.test(value);
-  }
+        <section className="mb-12 text-center max-w-4xl mx-auto px-4 md:px-0">
+          <h1 className="text-3xl font-bold inline-block max-w-xl my-8 p-3">
+            The simple &amp; powerful API to serve favicon from any domain
+          </h1>
 
-  setSourceRef = source => {
-    this.source = source;
-  }
+          <div className="bg-gray-300 text-left sm:text-center p-2 max-w-3xl m-auto">
+            <code className="overflow-wrap">https://cdn.statically.io/favicon/:url</code>
+          </div>
+        </section>
 
-  handleInputChange = e => {
-    let {from, to, w, h, output} = this.source;
-    let value = from.value.split('?')[0], // Ignore query string URL
-        data = {},
-        v = output.value;
-    v && (data[v] = true);
-    to.parentNode.parentNode.classList.remove('hidden');
-    to.value = this.isValidDomain(value) ? 'https://cdn.statically.io/favicons/' + value.replace(/^https?:\/\/(.*?)\/?$/, '$1') + this.createQueryString(data) : "";
-  }
+        <section className="mb-24 text-left max-w-4xl mx-auto px-4 md:px-0">
+          <h2 className="text-2xl font-bold mb-5">Examples</h2>
+          <p className="text-lg font-bold">Using default function</p>
+          <a
+            className="text-red-600 block"
+            href="https://cdn.statically.io/favicon/statically.io">
+              https://cdn.statically.io/favicon/statically.io
+          </a>
+          <img
+            className="inline ml-0 m-1"
+            src="https://cdn.statically.io/favicon/google.com"
+            alt="favicon 1"
+          />
+          <img
+            className="inline ml-0 m-1"
+            src="https://cdn.statically.io/favicon/duckduckgo.com"
+            alt="favicon 2"
+          />
+          <img
+            className="inline m-1"
+            src="https://cdn.statically.io/favicon/github.com"
+            alt="favicon 3"
+          />
+          <img
+            className="inline m-1"
+            src="https://cdn.statically.io/favicon/statically.io"
+            alt="favicon 4"
+          />
 
-  hideResultIfEmpty = () => {
-    let {from, to, output} = this.source;
-    let isValid = this.isValidDomain(from.value);
-    to.parentNode.parentNode.classList[isValid ? 'remove' : 'add']('hidden');
-    if (isValid) {
-      output[0].checked = true;
-      this.handleInputChange();
-    }
-  }
+          <p className="text-lg font-bold mt-5">Forcing to use SSL</p>
+          <a
+            className="text-red-600"
+            href="https://cdn.statically.io/favicon/example.com?ssl=1">
+              https://cdn.statically.io/favicon/example.com<span className="font-bold">?ssl=1</span>
+          </a>
 
-  handleInputPaste = () => {
-    setTimeout(() => {
-      this.handleInputChange();
-      let {to} = this.source;
-      to.parentNode.parentNode.classList.add('hidden');
-      if (this.isValidDomain(this.source.from.value)) {
-        to.parentNode.parentNode.classList.remove('hidden');
-        to.focus();
-        to.select();
-      }
-    }, 0);
-  }
+          <p className="text-lg font-bold mt-2">Applying custom cache</p>
+          <a
+            className="text-red-600"
+            href="https://cdn.statically.io/favicon/example.com?cache=31556952">
+              https://cdn.statically.io/favicon/example.com<span className="font-bold">?cache=31556952</span>
+          </a>
 
-  handleSubmit = e => {
-    e.preventDefault();
-  }
+          <p className="text-lg font-bold mt-2">Disabling cache:</p>
+          <a
+            className="text-red-600"
+            href="https://cdn.statically.io/favicon/example.com?cache=0">
+              https://cdn.statically.io/favicon/example.com<span className="font-bold">?cache=0</span>
+          </a>
+        </section>
 
-  render() {
-    return (
-      <Layout>
-        <SEO
-          title="Favicons"
-          keywords={[`statically`]}
-        />
-
-        <div className="px-4 py-8 md:p-8">
-
-          <section className="mb-24 text-center max-w-4xl mx-auto px-4 md:px-0">
-            <h1 className="text-3xl font-bold inline-block max-w-3xl my-8 p-3">
-              An easy way to get favicon from a domain!
-            </h1>
-
-            <form className="container mx-auto mb-20 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
-
-              <div>
-                <input className="bg-white focus:outline-none border border-gray-300 rounded-lg py-3 px-5 block w-full appearance-none leading-normal mx-auto shadow-lg focus:shadow-xl text-center text-lg" id="e:from" name="from" type="text" onChange={this.hideResultIfEmpty} onPaste={this.handleInputPaste} placeholder="Insert your desired website domain here&hellip;" />
-              </div>
-
-              <div className="mt-4 hidden">
-
-                <div>
-                  <label className="font-bold" htmlFor="e:to">Use this URL in production:</label>
-                  <input className="bg-white focus:outline-none border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal mt-2 mx-auto shadow-lg focus:shadow-xl text-center" id="e:to" name="to" type="text" />
-                </div>
-
-                <h3 className="mt-6 mb-6 pt-4 border-t font-semibold text-xl text-center">Common Settings</h3>
-
-                <div className="text-center -mx-3">
-                  <div className="inline-flex items-center">
-                    <label className="flex items-center h-4 mx-3">
-                      <input className="mr-2" name="output" onChange={this.handleInputChange} type="radio" value="" />
-                      <span>As Image</span>
-                    </label>
-                    <label className="flex items-center h-4 mx-3">
-                      <input className="mr-2" name="output" onChange={this.handleInputChange} type="radio" value="json" />
-                      <span>As JSON</span>
-                    </label>
-                    <label className="flex items-center h-4 mx-3">
-                      <input className="mr-2" name="output" onChange={this.handleInputChange} type="radio" value="blob" />
-                      <span>As Blob</span>
-                    </label>
-                  </div>
-                  <p className="w-full mx-3 mt-4 text-left text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet.
-                  </p>
-                </div>
-
-              </div>
-            </form>
-          </section>
-
-          <section className="mb-24 text-center max-w-4xl mx-auto px-4 md:px-0">
-            <div className="flex content-center flex-wrap">
-              <div className="w-full md:w-1/3 mb-3 max-w-lg overflow-hidden mx-auto text-left md:text-right">
-                <p className="text-lg">
-                  Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
-                </p>
-                <p className="my-4">Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div className="w-full md:w-2/3 mb-3 max-w-lg overflow-hidden mx-auto text-left">
-                <ul className="ml-8 list-disc">
-                  <li>No traffic limits or throttling. Files are served via super fast global CDN.</li>
-                  <li>Favicon are cached in your browser for 24 hours.</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-        </div>
-      </Layout>
-    );
-  }
-
+      </div>
+    </Layout>
+  );
 }
 
 export default FaviconsPage;
