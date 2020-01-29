@@ -26,7 +26,7 @@ function PurgePage() {
               <label className="block text-gray-700 text-sm font-bold mb-1" htmlFor="email">
                 Email
               </label>
-              <small className="block tracking-wide text-gray-700 text-xs mb-2">To notify you once the file is purged from CDNs.</small>
+              <small className="block tracking-wide text-gray-700 text-xs mb-2">We will notify you when the file is purged from CDNs.</small>
               <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="text" placeholder="frans@example.com" required />
             </div>
             
@@ -49,7 +49,7 @@ function PurgePage() {
                 URL(s)
               </label>
               <small className="block tracking-wide text-gray-700 text-xs mb-2">You will need to specify the full path to the file and include the query string if needed. Wildcards are not supported with single URL purge at this time. You can purge up to 30 URLs at a time.</small>
-              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-48" id="url" name="url" type="text" placeholder="/gh/jquery/jquery-dist/master/dist/jquery.js&#10;/img/example.com/dragon.jpg&#10;/img/example.com/avatar.jpg?quality=75" required></textarea>
+              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-48" id="url" name="url" type="text" placeholder="https://cdn.statically.io/gh/jquery/jquery-dist/master/dist/jquery.js&#10;https://cdn.statically.io/img/example.com/dragon.jpg&#10;https://cdn.statically.io/img/example.com/avatar.jpg?quality=75" required></textarea>
             </div>
 
             <div className="mb-4">
