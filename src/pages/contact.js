@@ -40,7 +40,7 @@ function ContactPage() {
               <label className="block tracking-wide text-gray-700 text-sm font-bold mb-1" htmlFor="message">
                 Message
               </label>
-              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Your message goes here" required></textarea>
+              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-48" id="message" name="message" type="text" placeholder="Your message goes here" required></textarea>
             </div>
 
              <button className="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="submit">
