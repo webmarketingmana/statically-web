@@ -68,7 +68,7 @@ function Header({ siteTitle }) {
               to="/support-statically"
               className="block md:inline-block mt-4 md:mt-0 mr-6 text-red-500"
             >
-              Support us!
+              Support Us!
             </Link>
 
             <a
