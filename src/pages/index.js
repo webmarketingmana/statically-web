@@ -34,14 +34,15 @@ const STATICALLY_PASTE_DATA = {
     });
     return "";
   },
-  'https?:\\/\\/(.+?)\\.github\\.(?:com|io)\\/(.+?)\\/([^?&#]+)': (to, value, m1, m2, m3) => {
+  'https?:\\/\\/(.+?)\\.github\\.(?:com|io)\\/([^\\/]+)(\\/?|\\/[^?&#]+)(.*)': (to, value, m1, m2, m3, m4) => {
     to.parentNode.parentNode.classList.remove('hidden');
     fetch('https://api.github.com/repos/' + m1 + '/' + m2 + '/commits/master')
       .then(response => response.json())
         .then(json => {
       let hash = json.sha && json.sha.slice(0, 8);
       if (hash) {
-        to.value = 'https://cdn.statically.io/gh/' + m1 + '/' + m2 + '/' + hash + '/' + m3;
+        // TODO: Detect path `./path/to/page` that maps to `./path/to/page.html`
+        to.value = 'https://cdn.statically.io/gh/' + m1 + '/' + m2 + '/' + hash + (!m3 || m3 === '/' ? '/index.html' : m3) + m4;
         to.focus();
         to.select();
       }
@@ -153,7 +154,7 @@ class IndexPage extends React.Component {
               <pre className="font-monospace text-sm text-left bg-gray-200 p-4 rounded mt-8 overflow-auto hidden"></pre>
             </form>
 
-            <div className="text-sm text-gray-600" title="Usage: /gh/:user/:repo/:tag/:file.js -&gt; /gh/:user/:repo/:tag/:file.min.js"><strong className="font-bold">ProTip:</strong> Add <code className="font-bold text-gray-800">.min</code> to URL of <strong className="font-bold">CSS</strong>, <strong className="font-bold">JS</strong>, <strong className="font-bold">SVG</strong>, <strong className="font-bold">HTML</strong>, and <strong className="font-bold">XML</strong> files to get a minified version.</div>
+            <div className="text-sm text-gray-600" title="Usage: /gh/:user/:repo/:tag/:file.js -&gt; /gh/:user/:repo/:tag/:file.min.js"><strong>ProTip:</strong> Add <code className="font-bold text-gray-800">.min</code> to URL of <strong>CSS</strong>, <strong>JS</strong>, <strong>SVG</strong>, <strong>HTML</strong>, and <strong>XML</strong> files to get a minified version.</div>
 
             <div className="flex content-center flex-wrap mt-16">
               <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
