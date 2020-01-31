@@ -34,14 +34,15 @@ const STATICALLY_PASTE_DATA = {
     });
     return "";
   },
-  'https?:\\/\\/(.+?)\\.github\\.(?:com|io)\\/(.+?)\\/([^?&#]+)': (to, value, m1, m2, m3) => {
+  'https?:\\/\\/(.+?)\\.github\\.(?:com|io)\\/([^\\/]+)(\\/?|\\/[^?&#]+)(.*)': (to, value, m1, m2, m3, m4) => {
     to.parentNode.parentNode.classList.remove('hidden');
     fetch('https://api.github.com/repos/' + m1 + '/' + m2 + '/commits/master')
       .then(response => response.json())
         .then(json => {
       let hash = json.sha && json.sha.slice(0, 8);
       if (hash) {
-        to.value = 'https://cdn.statically.io/gh/' + m1 + '/' + m2 + '/' + hash + '/' + m3;
+        // TODO: Detect path `./path/to/page` that maps to `./path/to/page.html`
+        to.value = 'https://cdn.statically.io/gh/' + m1 + '/' + m2 + '/' + hash + (!m3 || m3 === '/' ? '/index.html' : m3) + m4;
         to.focus();
         to.select();
       }
