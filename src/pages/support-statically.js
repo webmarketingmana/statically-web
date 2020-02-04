@@ -52,7 +52,7 @@ function SupportStaticallyPage() {
                 <a
                   href="https://uptimerobot.com"
                   className="sponsors-logo"
-                  rel="noopener" target="_blank"
+                  rel="noopener noreferrer" target="_blank"
                 >
                   <img
                     className="m-auto"
@@ -66,12 +66,12 @@ function SupportStaticallyPage() {
             <div className="sponsor-bronze mt-10">
               <h3 className="text-2xl font-bold mb-5">Bronze</h3>
 
-              <div class="flex content-center items-center max-w-2xl mx-auto flex-wrap">
-                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
+              <div className="flex content-center items-center max-w-2xl mx-auto flex-wrap">
+                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
                   <a
                     href="https://www.netlify.com"
                     className="sponsors-logo"
-                    rel="noopener" target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
@@ -80,11 +80,11 @@ function SupportStaticallyPage() {
                     />
                   </a>
                 </div>
-                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
+                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
                   <a
                     href="https://www.statuspage.io"
                     className="sponsors-logo"
-                    rel="noopener" target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
@@ -93,11 +93,11 @@ function SupportStaticallyPage() {
                     />
                   </a>
                 </div>
-                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
+                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
                   <a
                     href="https://www.cloudkilat.com"
                     className="sponsors-logo"
-                    rel="noopener" target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"
@@ -106,11 +106,11 @@ function SupportStaticallyPage() {
                     />
                   </a>
                 </div>
-                <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
+                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
                   <a
                     href="https://cleanbrowsing.org"
                     className="sponsors-logo"
-                    rel="noopener" target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                   >
                     <img
                       className="max-w-xxs mx-auto"

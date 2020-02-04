@@ -6,6 +6,7 @@ module.exports = {
     author: `@fransallen`
   },
   plugins: [
+    "gatsby-plugin-eslint",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -19,7 +20,16 @@ module.exports = {
         icon: `src/images/statically.png`
       }
     },
-    `gatsby-plugin-postcss`,
+    {
+      resolve: "gatsby-plugin-postcss",
+      options: {
+        postCssPlugins: [
+          require(`tailwindcss`)(`./tailwind.config.js`),
+          require(`autoprefixer`),
+          require(`cssnano`)
+        ]
+      }
+    },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {

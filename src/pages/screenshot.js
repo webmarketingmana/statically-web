@@ -9,7 +9,7 @@ function ScreenshotPage() {
       <SEO
         title="Screenshot"
         description="The free &amp; fast website screenshot and transformation for modern web development."
-        keywords={[`statically`]}
+        keywords={[`statically`, `screenshot`, `website`]}
       />
 
       <div className="px-4 py-8 md:p-8">

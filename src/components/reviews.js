@@ -11,7 +11,7 @@ function Reviews() {
         <a
           href="https://twitter.com"
           className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto border border-gray-200 border-solid shadow-lg hover:shadow-2xl rounded-lg p-6 md:-ml-5"
-          rel="noopener" target="_blank"
+          rel="noopener noreferrer" target="_blank"
         >
           <div className="mb-4">
             lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
@@ -28,7 +28,7 @@ function Reviews() {
         <a
           href="https://twitter.com"
           className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto border border-gray-200 border-solid shadow-lg hover:shadow-2xl rounded-lg p-6"
-          rel="noopener" target="_blank"
+          rel="noopener noreferrer" target="_blank"
         >
           <div className="mb-4">
             lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.
@@ -45,7 +45,7 @@ function Reviews() {
         <a
           href="https://twitter.com"
           className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto border border-gray-200 border-solid shadow-lg hover:shadow-2xl rounded-lg p-6 md:-mr-5"
-          rel="noopener" target="_blank"
+          rel="noopener noreferrer" target="_blank"
         >
           <div className="mb-4">
             lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content.

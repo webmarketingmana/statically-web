@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Info({ text, href, target, color }) {
   return (
-    <a className={`block p-2 bg-${color}-500 hover:bg-${color}-600 text-${color}-100 border-b font-bold text-center`} href={href} rel="noopener" target={target} role="alert">{text}</a>
+    <a className={`block p-2 bg-${color}-500 hover:bg-${color}-600 text-${color}-100 border-b font-bold text-center`} href={href} rel="noopener noreferrer" target={target} role="alert">{text}</a>
   );
 }
 
@@ -15,8 +15,9 @@ Info.defaultProps = {
 };
 
 Info.propTypes = {
-  text: PropTypes.string,
+  color: PropTypes.string,
   href: PropTypes.string,
+  text: PropTypes.string,
   target: PropTypes.string
 };
 

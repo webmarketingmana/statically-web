@@ -26,7 +26,7 @@ function DocsPage() {
           </div>
 
           <div className="mb-20">
-            <ul class="list-disc">
+            <ul className="list-disc">
               <li>
                 <Link to="/github">Serve GitHub files with Statically</Link>
               </li>

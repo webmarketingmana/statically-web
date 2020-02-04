@@ -96,7 +96,7 @@ function PrivacyPage() {
             </li>
           </ul>
           <h3 className="font-bold text-2xl">Links To Other Sites</h3>
-          <p className="my-4">Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+          <p className="my-4">Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party&apos;s site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
           <p className="my-4">We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
           <h3 className="font-bold text-2xl">Children&rsquo;s Privacy</h3>
           <p className="my-4">Our Service does not address anyone under the age of 13 (&ldquo;Children&rdquo;).</p>

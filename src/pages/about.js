@@ -62,7 +62,7 @@ function AboutPage() {
               <a
                 href="https://twitter.com/fransallen"
                 className="text-sm text-red-500"
-                rel="noopener" target="_blank"
+                rel="noopener noreferrer" target="_blank"
               >
                 @fransallen
               </a>
@@ -105,7 +105,7 @@ function AboutPage() {
               Newsletter
             </h2>
             <p className="mx-auto text-xl">
-              Don't miss up any news and updates from Statically.
+              Don&apos;t miss up any news and updates from Statically.
             </p>
           </div>
 

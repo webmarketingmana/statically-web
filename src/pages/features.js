@@ -136,7 +136,7 @@ function FeaturesPage() {
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Works with any files</div>
               <p className="text-gray-700 text-base">
-                Store your files on a repo, just like you always have. When it's time to share, simply serve with Statically.
+                Store your files on a repo, just like you always have. When it&apos;s time to share, simply serve with Statically.
               </p>
             </div>
           </div>

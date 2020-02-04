@@ -36,7 +36,7 @@ const STATICALLY_PASTE_DATA = {
   },
   'https?:\\/\\/(.+?)\\.github\\.(?:com|io)\\/(.+?)\\/([^?&#]+)': (to, value, m1, m2, m3) => {
     to.parentNode.parentNode.classList.remove('hidden');
-    fetch('https://api.github.com/repos/' + m1 + '/' + m2 + '/commits/master')
+    fetch('https://api.statically.io/gh/repos/' + m1 + '/' + m2 + '/commits/master')
       .then(response => response.json())
         .then(json => {
       let hash = json.sha && json.sha.slice(0, 8);
@@ -52,7 +52,7 @@ const STATICALLY_PASTE_DATA = {
   'https?:\\/\\/github\\.com\\/([^\\/]+)\\/([^\\/]+)\\/(?!releases\\/)(?:(?:blob|raw)\\/)?([^\\/]+)\\/([^?&#]+)': (to, value, m1, m2, m3, m4) => {
     to.parentNode.parentNode.classList.remove('hidden');
     if (m3 === 'master') {
-      fetch('https://api.github.com/repos/' + m1 + '/' + m2 + '/commits/' + m3)
+      fetch('https://api.statically.io/gh/repos/' + m1 + '/' + m2 + '/commits/' + m3)
         .then(response => response.json())
           .then(json => {
         let hash = json.sha && json.sha.slice(0, 8);
@@ -68,7 +68,7 @@ const STATICALLY_PASTE_DATA = {
   },
   'https?:\\/\\/gist\\.github\\.com\\/([^\\/\\s]+)\\/([^?&#]+)': (to, value, m1, m2) => {
     to.parentNode.parentNode.classList.remove('hidden');
-    fetch('https://api.github.com/gists/' + m2)
+    fetch('https://api.statically.io/gh/gists/' + m2)
       .then(response => response.json())
         .then(json => {
       let files = json.files,
@@ -104,7 +104,7 @@ class IndexPage extends React.Component {
     to.parentNode.parentNode.classList.add('hidden');
     to.parentNode.parentNode.nextElementSibling.classList.add('hidden');
     for (i in tasks) {
-      if (m = value.match(r = new RegExp('^' + i + '$'))) {
+      if ((m = value.match(r = new RegExp('^' + i + '$')))) {
         if (typeof tasks[i] === "function") {
           m.unshift(to);
           to.value = tasks[i].apply(to, m);
@@ -268,12 +268,6 @@ class IndexPage extends React.Component {
           <div className="border-b"></div>
 
           <Solutions />
-
-          {/**
-          <div className="border-b"></div>
-
-          <Reviews />
-          */}
 
           <div className="border-b"></div>
 

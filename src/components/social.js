@@ -26,7 +26,7 @@ function Social() {
           <a
             href="https://twitter.com/staticallyio"
             className="hover:text-blue-400"
-            rel="noopener" target="_blank"
+            rel="noopener noreferrer" target="_blank"
           >
             <FontAwesomeIcon
               icon={Brands.faTwitter}
