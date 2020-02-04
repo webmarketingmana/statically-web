@@ -33,7 +33,7 @@ function AboutPage() {
               Our mission is to make static files easy to manage and fast to deliver.
             </h1>
             <p className="mx-auto text-xl">
-              We help files distribution <strong>faster, smaller, reliable, and more efficient</strong> than ever.
+              We help files distribution <strong>faster</strong>, <strong>smaller</strong>, <strong>reliable</strong>, and <strong>more efficient</strong> than ever.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ function AboutPage() {
                Are you someone who likes speed and security? So you are in the right section, join Statically now, helping us maintain services and guide users to make our services even better.
               </p>
             </div>
-          </div>  
+          </div>
 
         </section>
 
