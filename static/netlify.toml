@@ -6,55 +6,55 @@
 # Redirects
 [[redirects]]
   from = "/img"
-  to = "/images/"
+  to = "https://statically.io/images/"
   status = 301
 [[redirects]]
   from = "/imgpx"
-  to = "/images/"
+  to = "https://statically.io/images/"
   status = 301
 [[redirects]]
   from = "/favicon"
-  to = "/favicons/"
+  to = "https://statically.io/favicons/"
   status = 301
 [[redirects]]
   from = "/badge"
-  to = "/badges/"
+  to = "https://statically.io/badges/"
   status = 301
 [[redirects]]
   from = "/become-a-sponsor"
-  to = "/support-statically/"
+  to = "https://statically.io/support-statically/"
   status = 301
 [[redirects]]
   from = "/donate"
-  to = "/support-statically/"
+  to = "https://statically.io/support-statically/"
   status = 301
 [[redirects]]
   from = "/sponsors"
-  to = "/support-statically/"
+  to = "https://statically.io/support-statically/"
   status = 301
 [[redirects]]
   from = "/network"
-  to = "/"
+  to = "https://statically.io"
   status = 301
 [[redirects]]
   from = "/newsletter"
-  to = "/"
+  to = "https://statically.io"
   status = 301
 [[redirects]]
   from = "/stats"
-  to = "/"
+  to = "https://statically.io"
   status = 301
 [[redirects]]
   from = "/rawgit"
-  to = "/"
+  to = "https://statically.io"
   status = 301
 [[redirects]]
   from = "/love"
-  to = "/"
+  to = "https://statically.io"
   status = 301
 [[redirects]]
   from = "/static/images/*"
-  to = "/images/:splat"
+  to = "https://statically.io/images/:splat"
   status = 301
 [[redirects]]
   from = "/become-a-sponsor-submission"
