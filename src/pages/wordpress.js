@@ -105,8 +105,10 @@ function WordpressPage() {
             </div>
           </section>
 
-          <form action="https://api.statically.io/integrations/wordpress" className="bg-white border shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-xl mx-auto" name="WordPress Form" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="WordPress Form" />
+          <form action="https://api.statically.io/integrations/wordpress" className="bg-white border shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-xl mx-auto" name="WordPress" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="WordPress" />
+            <input type="hidden" name="api-key" value="" />
+
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-1" htmlFor="email">
                 Email
@@ -150,7 +152,6 @@ function WordpressPage() {
                 </div>
               </div>
             </div>
-            <input type="hidden" name="apiKey" value="" />
 
             <button className="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="submit">
               Generate API Key
