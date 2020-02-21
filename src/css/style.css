@@ -123,6 +123,10 @@ svg.fetch path {
   animation: animation-fetch 400ms linear infinite;
 }
 
+svg.fetch.green path {
+  stroke: #3ed0e5;
+}
+
 .sponsors-logo .ns1 {
   width: 70px;
   height: 30px;

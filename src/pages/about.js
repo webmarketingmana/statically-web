@@ -87,7 +87,7 @@ function AboutPage() {
                 href="/contact"
                 className="text-sm text-red-500"
               >
-                @ contact us now !!
+                Join Us!
               </a>
               <p className="mt-2">
                Are you someone who likes speed and security? So you are in the right section, join Statically now, helping us maintain services and guide users to make our services even better.
