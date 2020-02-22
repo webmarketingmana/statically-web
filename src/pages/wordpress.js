@@ -34,7 +34,7 @@ function WordpressPage() {
                   WordPress, optimized!
                 </h2>
                 <p className="text-lg">
-                  Minify CSS and javascript, optimize and add transformation ability for image, cache them and deliver faster.
+                  Minimize CSS and javascript, optimize and add transformation capabilities to images, cache and deliver quickly.
                 </p>
               </div>
 
