@@ -79,7 +79,7 @@ function WordpressPage() {
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Install plugin</div>
                   <p className="text-gray-700 text-base">
-                    <a className="font-bold text-green-700" href="/wordpress/statically.zip">Download</a> and upload plugin to your WordPress site.
+                    <a className="font-bold text-green-700" href="/wordpress/statically.zip">Download</a> and upload the plugin to your WordPress site.
                   </p>
                 </div>
               </div>
@@ -88,7 +88,7 @@ function WordpressPage() {
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Generate API Key</div>
                   <p className="text-gray-700 text-base">
-                    <span className="font-bold">Tell Statically</span> to serve your domain.
+                    <span className="font-bold">Tell Statically</span> to service your domain.
                   </p>
                 </div>
                 <svg width="20" height="30" viewBox="0 0 20 30" className="fetch green"><path d="M10 40 L10 -10"></path></svg>
@@ -98,7 +98,7 @@ function WordpressPage() {
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Activate plugin</div>
                   <p className="text-gray-700 text-base">
-                    <span className="font-bold">Save settings</span> to make your WordPress site optimized.
+                    <span className="font-bold">Save the settings</span> to make your WordPress site optimized.
                   </p>
                 </div>
               </div>
