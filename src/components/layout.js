@@ -19,7 +19,7 @@ function Layout({ children }) {
 
   return (
     <div className="flex flex-col font-sans min-h-screen text-gray-900">
-      <Info text="Support Statically on BountySource!" href="https://www.bountysource.com/teams/staticallyio" />
+      <Info />
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main className="flex flex-col flex-1 md:justify-center mx-autow-full">
