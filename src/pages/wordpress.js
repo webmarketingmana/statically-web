@@ -11,7 +11,7 @@ function WordpressPage() {
     <Layout>
       <SEO
         title="WordPress Integration"
-        description="Loads file from WordPress fully optimized and deliver fast with the right of content type."
+        description="Finally here! CDN that is optimized for the needs of WordPress based websites."
         keywords={[`statically`, `wordpress`, `integration`]}
       />
 
