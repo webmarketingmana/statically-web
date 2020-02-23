@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Info({ text, href, target, color }) {
+function Info({ text, href, target }) {
   return (
-    <a className={`block p-2 bg-indigo-500 hover:bg-indigo-600 text-indigo-100 border-b font-bold text-center`} href={href} rel="noopener noreferrer" target={target} role="alert">{text}</a>
+    <a className="block p-2 bg-indigo-500 hover:bg-indigo-600 text-indigo-100 border-b font-bold text-center" href={href} rel="noopener noreferrer" target={target} role="alert">{text}</a>
   );
 }
 
@@ -14,7 +14,6 @@ Info.defaultProps = {
 };
 
 Info.propTypes = {
-  color: PropTypes.string,
   href: PropTypes.string,
   text: PropTypes.string,
   target: PropTypes.string
