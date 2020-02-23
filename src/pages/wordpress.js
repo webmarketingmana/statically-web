@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as Regular from "@fortawesome/free-regular-svg-icons";
@@ -153,9 +154,16 @@ function WordpressPage() {
               </div>
             </div>
 
-            <button className="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="submit">
+            <button className="mb-4 w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="submit">
               Generate API Key
             </button>
+
+            <small className="block tracking-wide text-gray-700 text-xs mb-2">
+              By clicking Generate API Key button you are agree with our
+              <Link to="/privacy"><strong className="font-bold"> Privacy Policy</strong></Link> and
+              <Link to="/terms"><strong className="font-bold"> Term of Service</strong></Link>.
+              This form works by sending data to our API, then our API processing the data, whitelisting your domain on our network, and subscribes you to our mailing list to share updates and web perf goodies.
+            </small>
           </form>
         </section>
 
