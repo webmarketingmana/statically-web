@@ -16,8 +16,9 @@ function Header({ siteTitle }) {
           <span className="font-bold text-xl tracking-tight hidden">{siteTitle}</span>
           <img
             className="h-8"
-            src={'/images/statically_wide.svg'}
+            src={'/images/statically.svg'}
             alt="Statically"
+            title="Statically logo"
           />
         </Link>
 
@@ -43,14 +44,14 @@ function Header({ siteTitle }) {
           <div className="font-semibold">
             <Link
               to="/features"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 text-gray-800 hover:text-red-500 focus:text-red-500"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 text-lg hover:text-red-500 focus:text-red-500"
             >
               Features
             </Link>
 
             <Link
               to="/docs"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 text-gray-800 hover:text-red-500 focus:text-red-500"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 text-lg hover:text-red-500 focus:text-red-500"
             >
               Docs
             </Link>
@@ -58,7 +59,7 @@ function Header({ siteTitle }) {
             {/**
             <Link
               to="/network"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 text-gray-800 hover:text-red-500 focus:text-red-500"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 text-lg hover:text-red-500 focus:text-red-500"
             >
               Network
             </Link>
@@ -73,16 +74,16 @@ function Header({ siteTitle }) {
 
             <a
               href="https://github.com/staticallyio/statically"
-              className="block md:inline-block mt-4 md:mt-0 mr-3 text-red-500"
+              className="block md:inline-block mt-4 md:mt-0 mr-3"
             >
-              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/stars/staticallyio/statically.svg?style=social&amp;cacheSeconds=86400" alt="stars"/>
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/style=social,cache=86400/stars/staticallyio/statically.svg" alt="GitHub stars"/>
             </a>
 
             <a
-              href="https://twitter.com/staticallyio"
-              className="block md:inline-block mt-4 md:mt-0 text-red-500"
+              href="https://twitter.com/intent/follow?screen_name=staticallyio"
+              className="block md:inline-block mt-4 md:mt-0"
             >
-              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/follow/staticallyio.svg?label=Follow&amp;cacheSeconds=86400" alt="Twitter"/>
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/label=Follow,cache=86400/follow/staticallyio.svg" alt="Twitter"/>
             </a>
           </div>
         </div>

@@ -76,7 +76,12 @@
   width: auto;
 }
 
-.sponsors-logo img:hover {
+.people .pic {
+  filter:grayscale(100%);
+  transition-duration:.3s;
+}
+
+.sponsors-logo img:hover, .people .pic:hover {
   filter:grayscale(0);
   transition-duration:.3s
 }
@@ -111,7 +116,6 @@ svg:not(:root) {
 
 svg.fetch {
   margin: 0 auto;
-  display: block;
 }
 
 svg.fetch path {

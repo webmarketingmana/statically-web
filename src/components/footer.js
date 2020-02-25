@@ -6,7 +6,7 @@ import * as Brands from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
-    <footer className="mt-20 mb-24 text-lg text-gray-700 text-center font-bold">
+    <footer className="mt-20 mb-24 text-lg text-center font-bold">
       <nav className="flex flex-wrap content-center max-w-xl mx-auto mb-5">
         <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 pb-6 sm:pr-12">
           <ul>
@@ -132,7 +132,7 @@ function Footer() {
         </Link>
       </nav>
 
-      <p className="font-normal text-center text-gray-600 text-base">&copy; 2020 Statically</p>
+      <p className="font-normal text-center text-gray-900 text-base">&copy; 2020 Statically</p>
     </footer>
 
   );

@@ -18,17 +18,17 @@ const STATICALLY_PASTE_DATA = {
     inspector.classList.remove('hidden');
     to.parentNode.parentNode.classList.add('hidden');
     inspector.innerHTML = 'Debugging URL\u2026';
-    value && fetch('https://apis.marsble.com/http2/v1/check?api_key=1fdba1ef633460c72972aaa993d61b&url=' + value).then(response => {
+    value && fetch('https://api.statically.io/analytics/headers?uri=' + value).then(response => {
       if (!response.ok) {
-        inspector.innerHTML = 'Failed to fetch data from Marsble API.';
+        inspector.innerHTML = 'Failed to fetch data from Statically API.';
         return;
       }
       return response.json();
     }).then(json => {
-      let headers = json.raw,
-          out = '<strong>HTTP2: ' + (json.http2 ? 'Yes' : 'No') + '</strong>', i;
+      let headers = json.headers,
+          out = '', i;
       for (i in headers) {
-        out += '\n' + headers[i];
+        out += headers[i] + '\n';
       }
       inspector.innerHTML = out;
     });
@@ -130,15 +130,15 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="Statically - The free, fast &amp; modern CDN for open source projects, WordPress, images, and any static assets."
+          title="Statically - The free optimization &amp; CDN for images, CSS, JavaScript, and any static assets."
           keywords={[`statically`, `open source`, `cdn`, `github`]}
         />
 
         <div className="px-4 py-8">
 
           <section className="mb-24 text-center max-w-4xl mx-auto px-4 md:px-0">
-            <h1 className="text-3xl font-bold inline-block max-w-3xl my-8 p-3">
-              The free, fast &amp; modern CDN for open source projects, WordPress, images, and any static assets.
+            <h1 className="text-4xl font-bold inline-block max-w-3xl mt-8 mb-4">
+              The free optimization &amp; CDN for images, CSS, JavaScript, and any static assets.
             </h1>
 
             <form className="container mx-auto mb-5 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
@@ -154,13 +154,13 @@ class IndexPage extends React.Component {
               <pre className="font-monospace text-sm text-left bg-gray-200 p-4 rounded mt-8 overflow-auto hidden"></pre>
             </form>
 
-            <div className="text-sm text-gray-600" title="Usage: /gh/:user/:repo/:tag/:file.js -&gt; /gh/:user/:repo/:tag/:file.min.js"><strong>ProTip:</strong> Add <code className="font-bold text-gray-800">.min</code> to URL of <strong>CSS</strong>, <strong>JS</strong>, <strong>SVG</strong>, <strong>HTML</strong>, and <strong>XML</strong> files to get a minified version.</div>
+            <div className="text-sm text-gray-700" title="Usage: /gh/:user/:repo/:tag/:file.js -&gt; /gh/:user/:repo/:tag/:file.min.js"><strong>ProTip:</strong> Add <code className="font-bold text-gray-900">.min</code> to URL of <strong>CSS</strong>, <strong>JS</strong>, <strong>SVG</strong>, <strong>HTML</strong>, and <strong>XML</strong> files to get a minified version.</div>
 
             <div className="flex content-center flex-wrap mt-16">
               <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Built for developers</div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-900 text-base">
                     Works with any static assets, supports modification and optimization.
                   </p>
                 </div>
@@ -169,7 +169,7 @@ class IndexPage extends React.Component {
               <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Unlimited traffic</div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-900 text-base">
                     No traffic limits or throttling. Files are served via super fast global CDNs.
                   </p>
                 </div>
@@ -178,7 +178,7 @@ class IndexPage extends React.Component {
               <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto">
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Push to serve</div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-900 text-base">
                     Integrated with your favorite tools: GitHub, GitLab, Bitbucket, and WordPress SVN.
                   </p>
                 </div>
@@ -215,7 +215,7 @@ class IndexPage extends React.Component {
                   <div className="font-bold text-xl mb-2">
                     Fast &amp; secure, anywhere
                   </div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-900 text-base">
                     4 CDN providers combined into one, picking the fastest for your location.
                   </p>
                 </div>
@@ -229,8 +229,8 @@ class IndexPage extends React.Component {
                   <div className="font-bold text-xl mb-2">
                     On-the-fly optimization
                   </div>
-                  <p className="text-gray-700 text-base">
-                    Automatic image resize, crop, filter, webp, and more.
+                  <p className="text-gray-900 text-base">
+                    Automatic CSS and JS minifier + image resize, crop, filter, webp, and more.
                   </p>
                 </div>
               </Link>
@@ -242,8 +242,8 @@ class IndexPage extends React.Component {
                   <div className="font-bold text-xl mb-2">
                     Developer friendly
                   </div>
-                  <p className="text-gray-700 text-base">
-                    Loads files from git repositories right away with no setup.
+                  <p className="text-gray-900 text-base">
+                    Loads files from your git repositories right away with no setup.
                   </p>
                 </div>
               </Link>

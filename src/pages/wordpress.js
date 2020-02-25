@@ -54,7 +54,7 @@ function WordpressPage() {
                   <svg width="20" height="30" viewBox="0 0 20 30" className="fetch"><path d="M10 40 L10 -10"></path></svg>
 
                   <img
-                    src="//cdn.statically.io/img/statically.io/images/statically.png?w=80"
+                    src="https://cdn.statically.io/img/statically.io/w=80/images/statically.png"
                     className="integration-logo mx-auto my-2"
                     alt="Statically"
                     title="Statically optimizing files"
@@ -92,7 +92,6 @@ function WordpressPage() {
                     <span className="font-bold">Tell Statically</span> to service your domain.
                   </p>
                 </div>
-                <svg width="20" height="30" viewBox="0 0 20 30" className="fetch green"><path d="M10 40 L10 -10"></path></svg>
               </div>
 
               <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-mr-6">
@@ -106,9 +105,13 @@ function WordpressPage() {
             </div>
           </section>
 
-          <form action="https://api.statically.io/integrations/wordpress" className="bg-white border shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-xl mx-auto" name="WordPress" method="POST" data-netlify="true">
+          <svg width="20" height="30" viewBox="0 0 20 30" className="fetch green hidden md:block mx-auto"><path d="M10 40 L10 -10"></path></svg>
+
+          <section className="mt-6 max-w-4xl mx-auto px-8 lg:px-0">
+            <h2 className="font-bold text-center text-4xl max-w-xl mx-auto mt-5 mb-5">Generate API Key</h2>
+
+            <form action="https://api.statically.io/integrations/wordpress" className="bg-white border shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-xl mx-auto" name="WordPress" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="WordPress" />
-            <input type="hidden" name="api-key" value="" />
 
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-1" htmlFor="email">
@@ -165,6 +168,7 @@ function WordpressPage() {
               This form works by sending data to our API, then our API processing the data, whitelisting your domain on our network, and subscribes you to our mailing list to share updates and web perf goodies.
             </small>
           </form>
+          </section>
         </section>
 
       </div>

@@ -18,7 +18,7 @@ function Layout({ children }) {
   `);
 
   return (
-    <div className="flex flex-col font-sans min-h-screen text-gray-900">
+    <div className="flex flex-col font-sans min-h-screen text-black">
       <Info />
       <Header siteTitle={data.site.siteMetadata.title} />
 

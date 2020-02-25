@@ -79,7 +79,7 @@ function Integrations() {
         <svg width="20" height="30" viewBox="0 0 20 30" className="fetch"><path d="M10 40 L10 -10"></path></svg>
 
         <img
-          src="https://cdn.statically.io/img/statically.io/images/statically.png?w=80"
+          src="https://cdn.statically.io/img/statically.io/w=80/images/statically.png"
           className="integration-logo mx-auto my-2"
           alt="Statically"
         />
