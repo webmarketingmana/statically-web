@@ -80,7 +80,7 @@ function WordpressPage() {
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Install plugin</div>
                   <p className="text-gray-700 text-base">
-                    <a className="font-bold text-green-700" href="/wordpress/statically.zip">Download</a> and upload the plugin to your WordPress site.
+                    <a className="font-bold text-green-700" href="https://downloads.wordpress.org/plugin/statically.zip" >Download</a> and upload the plugin to your WordPress site.
                   </p>
                 </div>
               </div>
