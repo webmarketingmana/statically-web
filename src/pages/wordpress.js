@@ -80,7 +80,7 @@ function WordpressPage() {
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Install plugin</div>
                   <p className="text-gray-700 text-base">
-                    <a className="font-bold text-green-700" href="https://downloads.wordpress.org/plugin/statically.zip" >Download</a> and upload the plugin to your WordPress site.
+                    <a className="font-bold text-green-700" href="https://wordpress.org/plugins/statically/" >Download</a> the Statically plugin from WordPress Plugins directory.
                   </p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ function WordpressPage() {
 
               <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 mb-3 max-w-sm overflow-hidden mx-auto md:-mr-6">
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Activate plugin</div>
+                  <div className="font-bold text-xl mb-2">You are ready!</div>
                   <p className="text-gray-700 text-base">
                     <span className="font-bold">Save the settings</span> to make your WordPress site optimized.
                   </p>
