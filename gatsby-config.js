@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-eslint",
+    "gatsby-plugin-remove-generator",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
