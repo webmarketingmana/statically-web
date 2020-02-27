@@ -48,8 +48,8 @@ function PurgePage() {
               <label className="block tracking-wide text-gray-700 text-sm font-bold mb-1" htmlFor="url">
                 URL(s)
               </label>
-              <small className="block tracking-wide text-gray-700 text-xs mb-2">You will need to specify the full path to the file and include the query string if needed. Wildcards are not supported with single URL purge at this time. You can purge up to 30 URLs at a time.</small>
-              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-48" id="url" name="url" type="text" placeholder="https://cdn.statically.io/gh/jquery/jquery-dist/master/dist/jquery.js&#10;https://cdn.statically.io/img/example.com/dragon.jpg&#10;https://cdn.statically.io/img/example.com/avatar.jpg?quality=75" required></textarea>
+              <small className="block tracking-wide text-gray-700 text-xs mb-2"><strong>Important: You will need to specify the full path to the file and include the query string if needed or we will not be able to service your request.</strong> Wildcards are not supported with single URL purge at this time. You can purge up to 30 URLs at a time.</small>
+              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-48" id="url" name="url" type="text" placeholder="-Submit by including https://cdn.statically.io&#10;-Do not send https://yourdomain.tld or yourdomain.tld&#10;-Make sure it&apos;s an absolute URL&#10;Example: https://cdn.statically.io/img/example.com/cat.jpg" required></textarea>
             </div>
 
             <div className="mb-4">
