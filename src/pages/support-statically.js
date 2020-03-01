@@ -37,76 +37,19 @@ function SupportStaticallyPage() {
               Exclusively sponsor Statically and have your company logo placed on this website.
             </p>
 
-            <div className="sponsor-platinum mt-10">
-              <h3 className="text-2xl font-bold mb-5">Platinum</h3>
+            <div className="sponsor-platinum mt-20">
+              <h3 className="text-2xl font-bold mb-10">Platinum</h3>
 
               <SponsorPlatinum />
 
               <SponsorPlatinum2 />
             </div>
 
-            <div className="sponsor-gold mt-10">
-              <h3 className="text-2xl font-bold mb-5">Gold</h3>
-
-              <div className="content-center items-center max-w-xl mx-auto">
-                <a
-                  href="https://uptimerobot.com"
-                  className="sponsors-logo"
-                  rel="noopener noreferrer" target="_blank"
-                >
-                  <img
-                    className="m-auto"
-                    src={'/images/sponsors/uptimerobot.png'}
-                    alt="Uptime Robot"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div className="sponsor-bronze mt-10">
-              <h3 className="text-2xl font-bold mb-5">Bronze</h3>
+            <div className="sponsor-bronze mt-20">
+              <h3 className="text-2xl font-bold mb-10">Bronze</h3>
 
               <div className="flex content-center items-center max-w-2xl mx-auto flex-wrap">
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
-                  <a
-                    href="https://www.netlify.com"
-                    className="sponsors-logo"
-                    rel="noopener noreferrer" target="_blank"
-                  >
-                    <img
-                      className="max-w-xxs mx-auto"
-                      src={'/images/sponsors/netlify.svg'}
-                      alt="Netlify"
-                    />
-                  </a>
-                </div>
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
-                  <a
-                    href="https://www.statuspage.io"
-                    className="sponsors-logo"
-                    rel="noopener noreferrer" target="_blank"
-                  >
-                    <img
-                      className="max-w-xxs mx-auto"
-                      src={'/images/sponsors/statuspageio.svg'}
-                      alt="StatusPage"
-                    />
-                  </a>
-                </div>
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
-                  <a
-                    href="https://www.cloudkilat.com"
-                    className="sponsors-logo"
-                    rel="noopener noreferrer" target="_blank"
-                  >
-                    <img
-                      className="max-w-xxs mx-auto"
-                      src={'/images/sponsors/cloudkilat.png'}
-                      alt="Cloudkilat"
-                    />
-                  </a>
-                </div>
-                <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
+                <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-2">
                   <a
                     href="https://cleanbrowsing.org"
                     className="sponsors-logo"
@@ -119,10 +62,36 @@ function SupportStaticallyPage() {
                     />
                   </a>
                 </div>
+                <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-2">
+                  <a
+                    href="https://uptimerobot.com"
+                    className="sponsors-logo"
+                    rel="noopener noreferrer" target="_blank"
+                  >
+                    <img
+                      className="max-w-xss m-auto"
+                      src={'/images/sponsors/uptimerobot.png'}
+                      alt="Uptime Robot"
+                    />
+                  </a>
+                </div>
+                <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-2">
+                  <a
+                    href="https://www.cloudkilat.com"
+                    className="sponsors-logo"
+                    rel="noopener noreferrer" target="_blank"
+                  >
+                    <img
+                      className="max-w-xxs mx-auto"
+                      src={'/images/sponsors/cloudkilat.png'}
+                      alt="CloudKilat"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="mt-20">
+            <div className="mt-24">
               <a
                 href="/become-a-sponsor-submission"
                 className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
