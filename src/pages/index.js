@@ -130,7 +130,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO
-          title="Statically - The free optimization &amp; CDN for images, CSS, JavaScript, and any static assets."
+          title="Statically - The free optimization &amp; CDN for images, CSS, JavaScript, and more"
           keywords={[`statically`, `open source`, `cdn`, `github`]}
         />
 
@@ -138,7 +138,7 @@ class IndexPage extends React.Component {
 
           <section className="mb-24 text-center max-w-4xl mx-auto px-4 md:px-0">
             <h1 className="text-4xl font-bold inline-block max-w-3xl mt-8 mb-4">
-              The free optimization &amp; CDN for images, CSS, JavaScript, and any static assets.
+              The free optimization &amp; CDN for images, CSS, JavaScript, and more
             </h1>
 
             <form className="container mx-auto mb-5 md:w-2/3" onSubmit={this.handleSubmit} ref={this.setSourceRef}>
