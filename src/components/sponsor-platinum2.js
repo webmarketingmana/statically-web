@@ -2,8 +2,8 @@ import React from "react";
 
 function SponsorPlatinum2() {
   return (
-    <div className="flex content-center items-center max-w-4xl mx-auto flex-wrap">
-      <div className="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 p-2 md:ml-8">
+    <div className="flex content-center items-center max-w-xl mx-auto flex-wrap">
+      <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 md:ml-2 md:-mr-10 p-1">
         <a
           href="https://ns1.com"
           className="sponsors-logo"
@@ -17,21 +17,7 @@ function SponsorPlatinum2() {
         </a>
       </div>
 
-      <div className="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 p-2 md:-ml-12">
-        <a
-          href="https://www.dediserve.com"
-          className="sponsors-logo"
-          rel="noopener noreferrer" target="_blank"
-        >
-          <img
-            className="max-w-xxs mx-auto"
-            src={'/images/sponsors/dediserve.svg'}
-            alt="Dediserve"
-          />
-        </a>
-      </div>
-
-      <div className="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 p-2">
+      <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
         <a
           href="https://runcloud.io"
           className="sponsors-logo"
@@ -45,7 +31,7 @@ function SponsorPlatinum2() {
         </a>
       </div>
 
-      <div className="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 p-2">
+      <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
         <a
           href="https://wp2static.com"
           className="sponsors-logo"
@@ -59,7 +45,7 @@ function SponsorPlatinum2() {
         </a>
       </div>
 
-      <div className="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 p-2">
+      <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-2">
         <a
           href="https://www.dewaweb.com"
           className="sponsors-logo"
