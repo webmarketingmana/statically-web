@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import networkMap from "../images/network-map.svg";
+import networkMap from "../../static/images/network-map.svg";
 
 function NetworkPage() {
   return (

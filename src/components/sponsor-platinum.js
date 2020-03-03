@@ -1,4 +1,8 @@
 import React from "react";
+import fastlyLogo from "../../static/images/sponsors/fastly.svg";
+import cloudflareLogo from "../../static/images/sponsors/cloudflare.svg";
+import bunnycdnLogo from "../../static/images/sponsors/bunnycdn.svg";
+import cdn77Logo from "../../static/images/sponsors/cdn77.svg";
 
 function SponsorPlatinum() {
   return (
@@ -10,7 +14,7 @@ function SponsorPlatinum() {
           rel="noopener noreferrer" target="_blank"
         >
           <img
-            src={'/images/sponsors/fastly.svg'}
+            src={fastlyLogo}
             alt="Fastly"
           />
         </a>
@@ -23,7 +27,7 @@ function SponsorPlatinum() {
           rel="noopener noreferrer" target="_blank"
         >
           <img
-            src={'/images/sponsors/cloudflare.svg'}
+            src={cloudflareLogo}
             alt="Cloudflare"
           />
         </a>
@@ -36,7 +40,7 @@ function SponsorPlatinum() {
           rel="noopener noreferrer" target="_blank"
         >
           <img
-            src={'/images/sponsors/bunnycdn.svg'}
+            src={bunnycdnLogo}
             alt="BunnyCDN"
           />
         </a>
@@ -49,7 +53,7 @@ function SponsorPlatinum() {
           rel="noopener noreferrer" target="_blank"
         >
           <img
-            src={'/images/sponsors/cdn77.svg'}
+            src={cdn77Logo}
             alt="CDN77"
           />
         </a>

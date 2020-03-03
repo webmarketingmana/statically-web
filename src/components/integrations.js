@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as Icons from "@fortawesome/free-solid-svg-icons";
 import * as Regular from "@fortawesome/free-regular-svg-icons";
 import * as Brands from '@fortawesome/free-brands-svg-icons';
+import staticallyIcon from "../../static/images/statically-icon.svg";
 
 function Integrations() {
   return(
@@ -11,7 +12,7 @@ function Integrations() {
       <div className="flex content-center flex-wrap">
         <Link
           to="/bitbucket"
-          className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto"
+          className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto hidden md:block"
         >
           <div className="text-center px-6 py-4">
             <FontAwesomeIcon
@@ -24,7 +25,7 @@ function Integrations() {
 
         <Link
           to="/gitlab"
-          className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto"
+          className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto hidden md:block"
         >
           <div className="text-center px-6 py-4">
             <FontAwesomeIcon
@@ -50,7 +51,7 @@ function Integrations() {
 
         <Link
           to="/wordpress"
-          className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto"
+          className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto hidden md:block"
         >
           <div className="text-center px-6 py-4">
             <FontAwesomeIcon
@@ -63,7 +64,7 @@ function Integrations() {
 
         <Link
           to="/custom"
-          className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto"
+          className="sm:w-1/5 md:w-1/5 lg:w-1/5 mb-4 max-w-sm rounded overflow-hidden border border-gray-200 border-solid shadow-lg hover:shadow-2xl mx-auto hidden md:block"
         >
           <div className="text-center px-6 py-4">
             <FontAwesomeIcon
@@ -79,9 +80,10 @@ function Integrations() {
         <svg width="20" height="30" viewBox="0 0 20 30" className="fetch"><path d="M10 40 L10 -10"></path></svg>
 
         <img
-          src="https://cdn.statically.io/img/statically.io/w=80/images/statically.png"
+          src={staticallyIcon}
           className="integration-logo mx-auto my-2"
           alt="Statically"
+          title="Statically optimizing files"
         />
 
         <svg width="20" height="30" viewBox="0 0 20 30" className="fetch"><path d="M10 40 L10 -10"></path></svg>
@@ -90,6 +92,7 @@ function Integrations() {
           <FontAwesomeIcon
             icon={Regular.faUser}
             className="integration-logo mx-auto mb-1"
+            title="Optimized version of static files delivered to you!"
           />
           <span>You</span>
         </div>

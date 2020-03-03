@@ -24,7 +24,7 @@ function CustomPage() {
               Your project + Statically
             </h1>
             <p className="text-lg mx-auto">
-              Manage open source project and need CDN for it? Let us know!
+              Manage open source project and need a CDN for it? Let us know!
             </p>
           </div>
 

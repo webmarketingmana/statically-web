@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
+import staticallyLogo from "../../static/images/statically-logo.svg";
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -16,7 +17,7 @@ function Header({ siteTitle }) {
           <span className="font-bold text-xl tracking-tight hidden">{siteTitle}</span>
           <img
             className="h-8"
-            src={'/images/statically.svg'}
+            src={staticallyLogo}
             alt="Statically"
             title="Statically logo"
           />
@@ -45,6 +46,7 @@ function Header({ siteTitle }) {
             <Link
               to="/features"
               className="block md:inline-block mt-4 md:mt-0 mr-6 text-lg hover:text-red-500 focus:text-red-500"
+              title="Discover Statically features"
             >
               Features
             </Link>
@@ -52,6 +54,7 @@ function Header({ siteTitle }) {
             <Link
               to="/docs"
               className="block md:inline-block mt-4 md:mt-0 mr-6 text-lg hover:text-red-500 focus:text-red-500"
+              title="Statically Documentation"
             >
               Docs
             </Link>
@@ -68,6 +71,7 @@ function Header({ siteTitle }) {
             <Link
               to="/support-statically"
               className="block md:inline-block mt-4 md:mt-0 mr-6 text-red-500"
+              title="Help us make this project sustainable"
             >
               Support Us!
             </Link>
@@ -75,6 +79,7 @@ function Header({ siteTitle }) {
             <a
               href="https://github.com/staticallyio/statically"
               className="block md:inline-block mt-4 md:mt-0 mr-3"
+              title="Star this project on GitHub"
             >
               <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/style=social,cache=86400/stars/staticallyio/statically.svg" alt="GitHub stars"/>
             </a>
@@ -82,6 +87,7 @@ function Header({ siteTitle }) {
             <a
               href="https://twitter.com/intent/follow?screen_name=staticallyio"
               className="block md:inline-block mt-4 md:mt-0"
+              title="Follow @staticallyio on Twitter"
             >
               <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/label=Follow,cache=86400/follow/staticallyio.svg" alt="Twitter"/>
             </a>

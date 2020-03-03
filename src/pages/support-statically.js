@@ -4,6 +4,9 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import SponsorPlatinum from "../components/sponsor-platinum";
 import SponsorPlatinum2 from "../components/sponsor-platinum2";
+import cleanbrowsingLogo from "../../static/images/sponsors/cleanbrowsing.png";
+import uptimerobotLogo from "../../static/images/sponsors/uptimerobot.png";
+import cloudkilatLogo from "../../static/images/sponsors/cloudkilat.png";
 
 function SupportStaticallyPage() {
   return (
@@ -57,7 +60,7 @@ function SupportStaticallyPage() {
                   >
                     <img
                       className="max-w-xxs mx-auto"
-                      src={'/images/sponsors/cleanbrowsing.png'}
+                      src={cleanbrowsingLogo}
                       alt="CleanBrowsing"
                     />
                   </a>
@@ -70,7 +73,7 @@ function SupportStaticallyPage() {
                   >
                     <img
                       className="max-w-xss m-auto"
-                      src={'/images/sponsors/uptimerobot.png'}
+                      src={uptimerobotLogo}
                       alt="Uptime Robot"
                     />
                   </a>
@@ -83,7 +86,7 @@ function SupportStaticallyPage() {
                   >
                     <img
                       className="max-w-xxs mx-auto"
-                      src={'/images/sponsors/cloudkilat.png'}
+                      src={cloudkilatLogo}
                       alt="CloudKilat"
                     />
                   </a>

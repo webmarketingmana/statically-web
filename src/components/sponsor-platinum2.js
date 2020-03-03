@@ -1,17 +1,21 @@
 import React from "react";
+import ns1Logo from "../../static/images/sponsors/ns1.svg";
+import runcloudLogo from "../../static/images/sponsors/runcloud.svg";
+import wp2staticLogo from "../../static/images/sponsors/wp2static.png";
+import dewawebLogo from "../../static/images/sponsors/dewaweb.png";
 
 function SponsorPlatinum2() {
   return (
     <div className="flex content-center items-center max-w-xl mx-auto flex-wrap">
-      <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 md:ml-2 md:-mr-10 p-1">
+      <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 md:-ml-6 md:-mr-2 p-1">
         <a
           href="https://ns1.com"
           className="sponsors-logo"
           rel="noopener noreferrer" target="_blank"
         >
           <img
-            className="ns1 mx-auto md:mx-0"
-            src={'/images/sponsors/ns1.png'}
+            className="mx-auto md:mx-0"
+            src={ns1Logo}
             alt="NS1"
           />
         </a>
@@ -25,7 +29,7 @@ function SponsorPlatinum2() {
         >
           <img
             className="max-w-xxs mx-auto"
-            src={'/images/sponsors/runcloud.svg'}
+            src={runcloudLogo}
             alt="RunCloud"
           />
         </a>
@@ -39,7 +43,7 @@ function SponsorPlatinum2() {
         >
           <img
             className="wp2static max-w-xxs mx-auto"
-            src={'/images/sponsors/wp2static.png'}
+            src={wp2staticLogo}
             alt="WP2Static"
           />
         </a>
@@ -53,7 +57,7 @@ function SponsorPlatinum2() {
         >
           <img
             className="dewaweb max-w-xxs mx-auto"
-            src={'/images/sponsors/dewaweb.png'}
+            src={dewawebLogo}
             alt="Dewaweb"
           />
         </a>

@@ -3,6 +3,8 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import staticallyIcon from "../../static/images/statically-icon.svg";
+import peopleImage from "../../static/images/people.svg";
 
 function AboutPage() {
   return (
@@ -18,8 +20,9 @@ function AboutPage() {
           <h2 className="inline-block mt-8">
             <img
               className="h-20"
-              src="https://cdn.statically.io/img/statically.io/w=80/images/statically.png"
+              src={staticallyIcon}
               alt="Statically"
+              title="Statically Bolt ⚡️"
             />
           </h2>
         </section>
@@ -67,7 +70,7 @@ function AboutPage() {
             </div>
 
             <div className="sm:w-1/3 md:w-1/3 lg:w-1/3 mb-4 max-w-sm mx-auto p-6">
-              <img className="pic w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src={'/images/people.svg'} alt="People"/>
+              <img className="pic w-16 h-16 rounded-full md:mx-0 md:mr-4 mb-2" src={peopleImage} alt="People"/>
               <h2 className="text-2xl font-bold">
                 You
               </h2>
