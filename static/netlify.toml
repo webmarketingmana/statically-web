@@ -5,6 +5,14 @@
 
 # Redirects
 [[redirects]]
+  from = "/images/statically.png"
+  to = "https://statically.io/images/statically-icon.png"
+  status = 301
+[[redirects]]
+  from = "/images/statically_wide.svg"
+  to = "https://statically.io/images/statically-logo.svg"
+  status = 301
+[[redirects]]
   from = "/img"
   to = "https://statically.io/images/"
   status = 301
@@ -64,14 +72,17 @@
   from = "https://statically.netlify.com/*"
   to = "https://statically.io/:splat"
   status = 301
+  force = true
 [[redirects]]
   from = "https://staticaly.com/*"
   to = "https://statically.io/:splat"
   status = 301
+  force = true
 [[redirects]]
   from = "https://www.staticaly.com/*"
   to = "https://statically.io/:splat"
   status = 301
+  force = true
 
 # Rules for all pages
 [[headers]]

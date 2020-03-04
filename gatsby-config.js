@@ -18,7 +18,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#e53e3e`,
         display: `minimal-ui`,
-        icon: `static/images/statically-icon.png`
+        icon: `static/images/branding/statically-mark.png`
       }
     },
     {

@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
-import staticallyLogo from "../../static/images/statically-logo.svg";
+import staticallyLogo from "../../static/images/branding/statically-logo-dark.svg";
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);

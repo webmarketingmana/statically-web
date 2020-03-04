@@ -7,7 +7,7 @@ import * as Brands from '@fortawesome/free-brands-svg-icons';
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import staticallyIcon from "../../static/images/statically-icon.svg";
+import staticallyMark from "../../static/images/branding/statically-mark.svg";
 
 function FeaturesPage() {
   return(
@@ -104,7 +104,7 @@ function FeaturesPage() {
               <svg width="20" height="30" viewBox="0 0 20 30" className="fetch"><path d="M10 40 L10 -10"></path></svg>
 
               <img
-                src={staticallyIcon}
+                src={staticallyMark}
                 className="integration-logo mx-auto my-2"
                 alt="Statically"
               />

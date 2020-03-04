@@ -3,8 +3,8 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import staticallyIcon from "../../static/images/statically-icon.svg";
-import peopleImage from "../../static/images/people.svg";
+import staticallyMark from "../../static/images/branding/statically-mark.svg";
+import peopleImage from "../../static/images/misc/people.svg";
 
 function AboutPage() {
   return (
@@ -20,7 +20,7 @@ function AboutPage() {
           <h2 className="inline-block mt-8">
             <img
               className="h-20"
-              src={staticallyIcon}
+              src={staticallyMark}
               alt="Statically"
               title="Statically Bolt ⚡️"
             />
