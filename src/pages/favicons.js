@@ -20,7 +20,7 @@ function FaviconsPage() {
           </h1>
 
           <div className="bg-gray-300 text-left sm:text-center p-2 max-w-3xl m-auto">
-            <code className="overflow-wrap">https://cdn.statically.io/favicon/:url</code>
+            <code className="overflow-wrap">https://cdn.statically.io/favicons/:url</code>
           </div>
         </section>
 
@@ -29,49 +29,49 @@ function FaviconsPage() {
           <p className="text-lg font-bold">Using default function</p>
           <a
             className="text-red-600 block"
-            href="https://cdn.statically.io/favicon/statically.io">
-              https://cdn.statically.io/favicon/statically.io
+            href="https://cdn.statically.io/favicons/statically.io">
+              https://cdn.statically.io/favicons/statically.io
           </a>
           <img
             className="inline ml-0 m-1"
-            src="https://cdn.statically.io/favicon/google.com"
+            src="https://cdn.statically.io/favicons/google.com"
             alt="favicon 1"
           />
           <img
             className="inline ml-0 m-1"
-            src="https://cdn.statically.io/favicon/duckduckgo.com"
+            src="https://cdn.statically.io/favicons/duckduckgo.com"
             alt="favicon 2"
           />
           <img
             className="inline m-1"
-            src="https://cdn.statically.io/favicon/github.com"
+            src="https://cdn.statically.io/favicons/github.com"
             alt="favicon 3"
           />
           <img
             className="inline m-1"
-            src="https://cdn.statically.io/favicon/statically.io"
+            src="https://cdn.statically.io/favicons/statically.io"
             alt="favicon 4"
           />
 
           <p className="text-lg font-bold mt-5">Forcing to use SSL</p>
           <a
             className="text-red-600"
-            href="https://cdn.statically.io/favicon/example.com?ssl=1">
-              https://cdn.statically.io/favicon/example.com<span className="font-bold">?ssl=1</span>
+            href="https://cdn.statically.io/favicons/example.com?ssl=1">
+              https://cdn.statically.io/favicons/example.com<span className="font-bold">?ssl=1</span>
           </a>
 
           <p className="text-lg font-bold mt-2">Applying custom cache</p>
           <a
             className="text-red-600"
-            href="https://cdn.statically.io/favicon/example.com?cache=31556952">
-              https://cdn.statically.io/favicon/example.com<span className="font-bold">?cache=31556952</span>
+            href="https://cdn.statically.io/favicons/example.com?cache=31556952">
+              https://cdn.statically.io/favicons/example.com<span className="font-bold">?cache=31556952</span>
           </a>
 
           <p className="text-lg font-bold mt-2">Disabling cache:</p>
           <a
             className="text-red-600"
-            href="https://cdn.statically.io/favicon/example.com?cache=0">
-              https://cdn.statically.io/favicon/example.com<span className="font-bold">?cache=0</span>
+            href="https://cdn.statically.io/favicons/example.com?cache=0">
+              https://cdn.statically.io/favicons/example.com<span className="font-bold">?cache=0</span>
           </a>
         </section>
 
