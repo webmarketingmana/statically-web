@@ -81,7 +81,7 @@ function Header({ siteTitle }) {
               className="block md:inline-block mt-4 md:mt-0 mr-3"
               title="Star this project on GitHub"
             >
-              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/style=social,cache=86400/stars/staticallyio/statically.svg" alt="GitHub stars"/>
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/github/style=social,cache=3600/stars/staticallyio/statically.svg" alt="GitHub stars" />
             </a>
 
             <a
@@ -89,7 +89,7 @@ function Header({ siteTitle }) {
               className="block md:inline-block mt-4 md:mt-0"
               title="Follow @staticallyio on Twitter"
             >
-              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/label=Follow,cache=86400/follow/staticallyio.svg" alt="Twitter"/>
+              <img className="sm:mb-2 md:-mb-1" src="https://cdn.statically.io/badges/twitter/label=Follow,cache=3600/follow/staticallyio.svg" alt="Twitter" />
             </a>
           </div>
         </div>
